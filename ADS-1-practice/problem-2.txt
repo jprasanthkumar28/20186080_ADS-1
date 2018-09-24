@@ -1,0 +1,8 @@
+Among the four given algorithms the WQUPC (Weight quick union path compression) is the efficient algorithm.And the are the following reasons:
+
+1.It has less time-complexity and its formula is M + N log * N
+where M is number of operations and N is number of objects.
+
+2.Using this algorithm we can be execute any problem in less time.
+
+3.Array access in this algorithm is done less number of times.
