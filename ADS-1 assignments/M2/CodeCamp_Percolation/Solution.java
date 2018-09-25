@@ -45,7 +45,7 @@ class Percolation {
     * @return     { description_of_the_return_value }
     */
    private int indexOf(final int i, final int j) {
-   	return n * (i - 1) + j - 1;
+   	return (n * (i - 1)) + (j - 1);
    }
    private void linkOpenSites(final int row, final int col) {
    		if (connected[col] && !weight.connected(row, col)) {
