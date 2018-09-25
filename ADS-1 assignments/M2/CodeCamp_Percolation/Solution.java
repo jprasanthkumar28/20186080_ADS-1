@@ -48,11 +48,10 @@ class Percolation {
    public void open(final int row, final int col) {
    		int index = indexOf(row, col);
    		connected[index] = true;
-   		// if (n == 1) {
-   		// 	weight.union(first, index);
-   		// 	weight.union(last, index);
-   		// 	return;
-   		// }
+   		if (n == 1) {
+   			weight.union(first, index);
+   			weight.union(last, index);
+   		}
    		int bottom = index + n;
    		int top = index - n;
    		if (bottom < size) {
