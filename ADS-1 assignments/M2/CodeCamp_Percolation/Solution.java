@@ -115,16 +115,16 @@ class Percolation {
 	  //  	return false;
    // }
 
-   // /**
-   //  * Tells about number of sites.
-   //  *
-   //  * @return     { description_of_the_return_value }
-   //  */
-   // public int numberOfOpenSites() {
-   // // number of open sites
-   // 	return 0;
+   /**
+    * Tells about number of sites.
+    *
+    * @return     { description_of_the_return_value }
+    */
+   public int numberOfOpenSites() {
+   // number of open sites
+   	return count;
 
-   // }
+   }
    /**
     * { function_description }
     *
