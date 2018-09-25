@@ -22,11 +22,11 @@ class Percolation {
 	// @param      n1    The n 1
 	//
    protected Percolation(final int n1) {
-   	this.first = size;
-   	this.count = 0;
-   	this.last = size + 1;
-   	this.n = n1;
    	this.size = n1 * n1;
+   	this.first = size;
+   	this.last = size + 1;
+   	this.count = 0;
+   	this.n = n1;
    	this.connected = new boolean[size];
    	weight = new WeightedQuickUnionUF(size + 2);
    	for (int i = 0; i < n; i++) {
