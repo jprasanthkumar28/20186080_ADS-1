@@ -28,10 +28,10 @@ class Percolation {
    	this.n = n1;
    	this.size = n1 * n1;
    	this.connected = new boolean[size];
-   	this.weight = new WeightedQuickUnionUF(size + 2);
+   	weight = new WeightedQuickUnionUF(size + 2);
    	for (int i = 0; i < n; i++) {
    		weight.union(first, i);
-   		weight.union(first, size - i - 1);
+   		weight.union(last, size - i - 1);
    	}
 
    }
