@@ -63,12 +63,12 @@ class Percolation {
    		int index = indexOf(row, col);
    		connected[index] = true;
    		count++;
-   		if (n == 1) {
-   			weight.union(first, index);
-   			weight.union(last, index);
-   		}
    		int bottom = index + n;
    		int top = index - n;
+   		if (n == 1) {
+   			weight.union(first, index);
+   			weight.union(first, index);
+   		}
    		if (bottom < size) {
    			linkOpenSites(index, bottom);
    		}
