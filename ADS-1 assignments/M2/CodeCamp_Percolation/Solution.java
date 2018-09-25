@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 class Percolation {
     /**
-     * varaibles size, n, first and last;
+     * varaibles size, n, first and last.
      */
     private int size, n, first, last, count;
     /**
@@ -120,7 +120,7 @@ class Percolation {
 
    }
    /**
-    * { function_description }
+    * percolates the value.
     *
     * @return     { description_of_the_return_value }
     */
