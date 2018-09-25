@@ -16,11 +16,11 @@ class Percolation {
      * for weight object.
      */
     private WeightedQuickUnionUF weight;
-    //
-    // create n-by-n grid, with all sites blocked
-    //
-    // @param      n1    The n 1
-    //
+    /**
+     * Constructs the object.
+     *
+     * @param      n1    The n 1
+     */
    protected Percolation(final int n1) {
     this.size = n1 * n1;
     this.first = size;
@@ -47,6 +47,12 @@ class Percolation {
    private int indexOf(final int i, final int j) {
     return (n * (i - 1)) + (j - 1);
    }
+   /**
+    * Links open sites.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    */
    private void linkOpenSites(final int row, final int col) {
         if (connected[col] && !weight.connected(row, col)) {
             weight.union(row, col);
@@ -97,23 +103,11 @@ class Percolation {
     *
     * @return     True if open, False otherwise.
     */
-   public boolean isOpen(final int row, final int col)  { // is site (row, col) open?
+   public boolean isOpen(final int row, final int col)  {
+   // is site (row, col) open?
         return connected[indexOf(row, col)];
 
    }
-
-   // /**
-   //  * Determines if full.
-   //  *
-   //  * @param      row   The row
-   //  * @param      col   The col
-   //  *
-   //  * @return     True if full, False otherwise.
-   //  */
-   //  // is site (row, col) full?
-   // public boolean isFull(final int row, fianl int col)  {
-      //    return false;
-   // }
 
    /**
     * Tells about number of sites.
@@ -160,6 +154,7 @@ public final class Solution {
             perculation.open(Integer.parseInt(tokens[0]),
                 Integer.parseInt(tokens[1]));
         }
-        System.out.println(perculation.percolates() && perculation.numberOfOpenSites() != 0);
+        System.out.println(perculation.percolates()
+            && perculation.numberOfOpenSites() != 0);
     }
 }
