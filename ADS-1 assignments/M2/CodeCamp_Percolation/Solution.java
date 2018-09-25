@@ -28,10 +28,10 @@ class Percolation {
     *
     * @return     { description_of_the_return_value }
     */
-   private int indexOf(int i, int j) {
+   private int indexOf(final int i, final int j) {
    	return n * (i - 1) + j - 1;
    }
-   private void linkOpenSites(int row, int col) {
+   private void linkOpenSites(final int row, final int col) {
    		if (connected[col] && !weight.connected(row, col)) {
    			weight.union(row, col);
    		}
@@ -43,11 +43,13 @@ class Percolation {
     * @param      col   The col
     */
     // open site (row, col) if it is not open already
-   public void open(int row, int col) {
+   public void open(final int row, final int col) {
    		int index = indexOf(row, col);
    		connected[index] = true;
-   		if (n == 2) {
-   			weight.union(index, index + 1);
+   		if (n == 1) {
+   			weight.union(first, index);
+   			weight.union(last, index);
+   			return;
    		}
    		int bottom = index + n;
    		int top = index - n;
@@ -79,35 +81,35 @@ class Percolation {
     *
     * @return     True if open, False otherwise.
     */
-   public boolean isOpen(int row, int col)  { // is site (row, col) open?
+   public boolean isOpen(final int row, final int col)  { // is site (row, col) open?
    		
    		return connected[indexOf(row, col)];
 
    }
 
-   /**
-    * Determines if full.
-    *
-    * @param      row   The row
-    * @param      col   The col
-    *
-    * @return     True if full, False otherwise.
-    */
-    // is site (row, col) full?
-   public boolean isFull(int row, int col)  {
-	   	return false;
-   }
+   // /**
+   //  * Determines if full.
+   //  *
+   //  * @param      row   The row
+   //  * @param      col   The col
+   //  *
+   //  * @return     True if full, False otherwise.
+   //  */
+   //  // is site (row, col) full?
+   // public boolean isFull(final int row, fianl int col)  {
+	  //  	return false;
+   // }
 
-   /**
-    * Tells about number of sites.
-    *
-    * @return     { description_of_the_return_value }
-    */
-   public int numberOfOpenSites() {
-   // number of open sites
-   	return 0;
+   // /**
+   //  * Tells about number of sites.
+   //  *
+   //  * @return     { description_of_the_return_value }
+   //  */
+   // public int numberOfOpenSites() {
+   // // number of open sites
+   // 	return 0;
 
-   }
+   // }
    /**
     * { function_description }
     *
@@ -121,11 +123,11 @@ class Percolation {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	private Solution() {
 		//Empty Constructor.
 	}
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		// WeightedQuickUnionUF weight = new WeightedQuickUnionUF(n);
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
