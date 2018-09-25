@@ -4,12 +4,26 @@ import java.util.Scanner;
  * @author Prasanth...
  */
 class Percolation {
-	private int size, n, first, last;
+	/**
+	 * varaibles size, n, first and last;
+	 */
+	private int size, n, first, last, count;
+	/**
+	 * for connected.
+	 */
 	private boolean[] connected;
+	/**
+	 * for weight object.
+	 */
 	private WeightedQuickUnionUF weight;
+	//
 	// create n-by-n grid, with all sites blocked
-   public Percolation(int n1) {
+	//
+	// @param      n1    The n 1
+	//
+   protected Percolation(final int n1) {
    	this.first = size;
+   	this.count = 0;
    	this.last = size + 1;
    	this.n = n1;
    	this.size = n1 * n1;
@@ -48,6 +62,7 @@ class Percolation {
    public void open(final int row, final int col) {
    		int index = indexOf(row, col);
    		connected[index] = true;
+   		count++;
    		if (n == 1) {
    			weight.union(first, index);
    			weight.union(last, index);
@@ -83,7 +98,6 @@ class Percolation {
     * @return     True if open, False otherwise.
     */
    public boolean isOpen(final int row, final int col)  { // is site (row, col) open?
-   		
    		return connected[indexOf(row, col)];
 
    }
@@ -125,6 +139,9 @@ class Percolation {
  * Class for solution.
  */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 		//Empty Constructor.
 	}
@@ -133,9 +150,10 @@ public final class Solution {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		Percolation perculation = new Percolation(n);
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
-			perculation.open(Integer.parseInt(tokens[0]),Integer.parseInt(tokens[1]));
+			perculation.open(Integer.parseInt(tokens[0]),
+				Integer.parseInt(tokens[1]));
 		}
 		System.out.println(perculation.percolates());
 	}
