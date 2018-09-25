@@ -9,6 +9,8 @@ class Percolation {
 	private WeightedQuickUnionUF weight;
 	// create n-by-n grid, with all sites blocked
    public Percolation(int n1) {
+   	this.first = size;
+   	this.last = size + 1;
    	this.n = n1;
    	this.size = n1 * n1;
    	this.connected = new boolean[size];
