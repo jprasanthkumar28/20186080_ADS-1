@@ -42,9 +42,9 @@ class TripleSum {
                 // result = arr[i] + arr[j];
                 // result1 = result * -1;
                 int v = binarySearch(arr, -(arr[i] + arr[j]));
-                if (v > j) {
-                    count++;
-                }
+                // if (v > j) {
+                //     count++;
+                // }
             }
         }
         return count;
@@ -56,7 +56,7 @@ public class Solution {
         int n = Integer.parseInt(scan.nextLine());
         int[] t = new int[n];
         TripleSum three = new TripleSum(n);
-        for (int i = 0; i < n;i++ ) {
+        for (int i = 0; i < n; i++) {
             t[i] = scan.nextInt();
         }
         // System.out.println(three.arraySum(t));
