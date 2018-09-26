@@ -18,14 +18,14 @@ class TripleSum {
     }
     public int binarySearch(int key)
     {
-        int lo = 0, hi = arr.length - 1, count = 0;
-        while (lo <= hi)
+        int first = 0, last = arr.length - 1, count = 0;
+        while (first <= last)
         {
-            int mid = lo + (hi - lo) / 2;
+            int mid = (first + last) / 2;
             if (key < arr[mid]) {
-              hi = mid - 1;  
+              last = mid - 1;  
             } else if (key > arr[mid]) {
-                lo = mid + 1; 
+                first = mid + 1; 
             } else {
                 return mid;
             }
