@@ -2,22 +2,33 @@ import java.util.Scanner;
 import java.util.Arrays;
 /**
  * Class for triple sum.
- * @author Prasanth... 
+ * @author Prasanth...
  */
 class TripleSum {
     /**
      * integer array.
      */
     private int[] arr;
+    /**
+     * variable result and count.
+     */
     private int result, count;
+    /**
+     * size.
+     */
     private int size;
+    /**
+     * Constructs the object.
+     *
+     * @param      number  The number
+     */
     TripleSum(final int number) {
         this.result = 0;
         this.count = 0;
         this.size = number;
         this.arr = new int[number];
     }
-    public int binarySearch(int[] array, int key)
+    public int binarySearch(final int[] array, final int key)
     {
         int first = 0, last = array.length - 1;
         while (first <= last)
@@ -34,7 +45,7 @@ class TripleSum {
         }
         return -1;
     }
-    public int arraySum(int[] arr) {
+    public int arraySum(final int[] arr) {
         Arrays.sort(arr);
         // int result1= 0;
         for (int i = 0; i < arr.length; i++) {
@@ -50,8 +61,22 @@ class TripleSum {
         return count;
     }
 }
-public class Solution {
-    public static void main(String[] args) {
+/**
+ * { item_description }
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    protected Solution() {
+        //Empty Constructor.
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         int[] t = new int[n];
