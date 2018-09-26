@@ -38,28 +38,34 @@ class TripleSum {
      */
     public int binarySearch(final int[] array, final int key) {
         int first = 0, last = array.length - 1;
-        while (first <= last)
-        {
+        while (first <= last) {
             int mid = (first + last) / 2;
             if (array[mid] == key) {
                 return mid;
             } else if (array[mid] < key) {
                 first = mid + 1;
             } else {
-                last = mid - 1; 
+                last = mid - 1;
             }
             // count++;
         }
         return -1;
     }
-    public int arraySum(final int[] arr) {
-        Arrays.sort(arr);
+    /**
+     * to find sum.
+     *
+     * @param      arr   The arr
+     *
+     * @return     count.
+     */
+    public int arraySum(final int[] arr1) {
+        Arrays.sort(arr1);
         // int result1= 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = i + 1; j < arr1.length; j++) {
                 // result = arr[i] + arr[j];
                 // result1 = result * -1;
-                int k = binarySearch(arr, -(arr[i] + arr[j]));
+                int k = binarySearch(arr1, -(arr1[i] + arr1[j]));
                 if (k > j) {
                     count++;
                 }
@@ -69,7 +75,7 @@ class TripleSum {
     }
 }
 /**
- * { item_description }
+ * { item_description }.
  */
 public final class Solution {
     /**
