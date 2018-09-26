@@ -28,8 +28,15 @@ class TripleSum {
         this.size = number;
         this.arr = new int[number];
     }
-    public int binarySearch(final int[] array, final int key)
-    {
+    /**
+     * binary search program.
+     *
+     * @param      array  The array
+     * @param      key    The key
+     *
+     * @return     value.
+     */
+    public int binarySearch(final int[] array, final int key) {
         int first = 0, last = array.length - 1;
         while (first <= last)
         {
