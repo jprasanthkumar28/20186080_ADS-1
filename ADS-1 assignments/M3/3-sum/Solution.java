@@ -18,7 +18,7 @@ class TripleSum {
     }
     public int binarySearch(int key)
     {
-        int first = 0, last = arr.length - 1, count = 0;
+        int first = 0, last = arr.length, count = 0;
         while (first <= last)
         {
             int mid = (first + last) / 2;
