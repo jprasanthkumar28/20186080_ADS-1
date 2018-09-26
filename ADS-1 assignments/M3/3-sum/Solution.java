@@ -30,7 +30,7 @@ class TripleSum {
             } else {
                 last = mid - 1; 
             }
-            count++;
+            // count++;
         }
         return -1;
     }
@@ -41,10 +41,10 @@ class TripleSum {
             for (int j = i + 1; j < arr.length; j++) {
                 // result = arr[i] + arr[j];
                 // result1 = result * -1;
-                int v = binarySearch(arr, -(arr[i] + arr[j]));
-                // if (v > j) {
-                //     count++;
-                // }
+                int k = binarySearch(arr, -(arr[i] + arr[j]));
+                if (k > j) {
+                    count++;
+                }
             }
         }
         return count;
