@@ -12,7 +12,7 @@ class TripleSum {
 	public int arraySum(int[] arr) {
 		Arrays.sort(arr);
 		int count = 0;
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length - 2; i++) {
 			result = arr[i] + arr[i + 1] + arr[i + 2];
 			if (result == 0) {
 				count++;
