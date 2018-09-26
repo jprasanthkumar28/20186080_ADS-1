@@ -8,29 +8,41 @@ class TripleSum {
     /**
      * integer array.
      */
-    private int[] array;
+    private int[] arr;
     private int result;
     private int size;
     TripleSum(final int number) {
         this.result = 0;
         this.size = number;
-        this.array = new int[number];
+        this.arr = new int[number];
     }
-        public int arraySum(int[] arr) {
+    public int binarySearch(int key)
+    {
+        int lo = 0, hi = arr.length - 1;
+        while (lo <= hi)
+        {
+            int mid = lo + (hi - lo) / 2;
+            if (key < arr[mid]) {
+              hi = mid - 1;  
+            } else if (key > arr[mid]) {
+                lo = mid + 1; 
+            } else {
+                return mid;
+            }
+        }
+        return -1;
+    }
+    public void arraySum(int[] arr) {
         Arrays.sort(arr);
-        int count = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length - 1; j++) {
-                int last = arr.length - 1;
-                result = arr[i] + arr[j] + arr[last];
-                if (result == 0) {
-                    count++;
-                }
-            last--;
+                result = arr[i] + arr[j];
+                int result1 = result * -1;
+                binarySearch(result1);
             }
-            }
-        return count;
-    }
+        }
+        
+}
 }
 public class Solution {
     public static void main(String[] args) {
@@ -41,6 +53,7 @@ public class Solution {
         for (int i = 0; i < n;i++ ) {
             t[i] = scan.nextInt();
         }
-        System.out.println(three.arraySum(t));
+        // System.out.println(three.arraySum(t));
+        three.arraySum(t);
     }
 }
