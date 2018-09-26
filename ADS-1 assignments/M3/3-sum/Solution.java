@@ -54,7 +54,7 @@ class TripleSum {
     /**
      * to find sum.
      *
-     * @param      arr   The arr
+     * @param      arr1   The arr1
      *
      * @return     count.
      */
