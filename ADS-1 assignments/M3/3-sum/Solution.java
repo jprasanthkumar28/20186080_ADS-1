@@ -18,7 +18,7 @@ class TripleSum {
     }
     public int binarySearch(int key)
     {
-        int lo = 0, hi = arr.length - 1;
+        int lo = 0, hi = arr.length - 1, count = 0;
         while (lo <= hi)
         {
             int mid = lo + (hi - lo) / 2;
@@ -29,18 +29,21 @@ class TripleSum {
             } else {
                 return mid;
             }
+            count++;
         }
+        System.out.println(count);
         return -1;
     }
     public void arraySum(int[] arr) {
         Arrays.sort(arr);
+        int result1= 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length - 1; j++) {
                 result = arr[i] + arr[j];
-                int result1 = result * -1;
-                binarySearch(result1);
+                result1 = result * -1;
             }
         }
+        binarySearch(result1);
         
 }
 }
