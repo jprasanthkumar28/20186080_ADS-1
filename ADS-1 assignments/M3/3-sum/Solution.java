@@ -16,19 +16,19 @@ class TripleSum {
         this.size = number;
         this.array = new int[number];
     }
-    public int arraySum(int[] arr) {
+        public int arraySum(int[] arr) {
         Arrays.sort(arr);
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length - 1; j++) {
-                // int last = arr.length - 1;
-                result = arr[i] + arr[j] + arr[j + 1];
+                int last = arr.length - 1;
+                result = arr[i] + arr[j] + arr[last];
                 if (result == 0) {
                     count++;
+                }
+            last--;
             }
-            // last--;
             }
-        }
         return count;
     }
 }
