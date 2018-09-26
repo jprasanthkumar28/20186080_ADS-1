@@ -37,8 +37,8 @@ class TripleSum {
     public int arraySum(int[] arr) {
         Arrays.sort(arr);
         // int result1= 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length - 1; j++) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 // result = arr[i] + arr[j];
                 // result1 = result * -1;
                 int v = binarySearch(arr, -(arr[i] + arr[j]));
