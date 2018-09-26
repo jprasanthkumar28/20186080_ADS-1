@@ -9,16 +9,17 @@ class TripleSum {
      * integer array.
      */
     private int[] arr;
-    private int result;
+    private int result, count;
     private int size;
     TripleSum(final int number) {
         this.result = 0;
+        this.count = 0;
         this.size = number;
         this.arr = new int[number];
     }
     public int binarySearch(int key)
     {
-        int first = 0, last = arr.length, count = 0;
+        int first = 0, last = arr.length - 1;
         while (first <= last)
         {
             int mid = (first + last) / 2;
