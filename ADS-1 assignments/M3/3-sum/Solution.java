@@ -23,16 +23,15 @@ class TripleSum {
         while (first <= last)
         {
             int mid = (first + last) / 2;
-            if (key < array[mid]) {
-              last = mid - 1;  
-            } else if (key > array[mid]) {
-                first = mid + 1; 
-            } else {
+            if (array[mid] == key) {
                 return mid;
+            } else if (array[mid] < key) {
+                first = mid + 1;
+            } else {
+                last = mid - 1; 
             }
             count++;
         }
-        //System.out.println(count);
         return -1;
     }
     public int arraySum(int[] arr) {
