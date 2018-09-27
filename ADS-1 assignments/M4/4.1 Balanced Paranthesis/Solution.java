@@ -71,7 +71,7 @@ public final class Solution {
         String str = scan.nextLine();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (ch == '(' || ch == '{' || ch != '[') {
+            if (ch == '(' || ch == '{' || ch == '[') {
                 llist.push(ch);
             } else if (llist.isEmpty()) {
                 return false;
@@ -84,7 +84,7 @@ public final class Solution {
                     return false;
                 }
             } else if (ch == '}') {
-                if (llist == null || llist.pop() == '{') {
+                if (llist == null || llist.pop() != '{') {
                     return false;
                 }
             }
