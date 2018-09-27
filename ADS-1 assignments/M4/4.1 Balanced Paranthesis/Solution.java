@@ -65,7 +65,7 @@ public final class Solution {
      *
      * @return     {Boolean}
      */
-    public static boolean check(final Scanner scan) {
+public static boolean check(final Scanner scan) {
         boolean res = false;
         LinkedList llist = new LinkedList();
         String str = scan.nextLine();
@@ -94,7 +94,7 @@ public final class Solution {
             }
         }
         if (llist.isEmpty()) {
-            res = false;
+            res = true;
             return res;
         } else {
             return res;
