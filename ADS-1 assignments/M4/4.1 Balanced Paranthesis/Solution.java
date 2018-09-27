@@ -66,7 +66,7 @@ public final class Solution {
      * @return     {Boolean}
      */
     public static boolean check(final Scanner scan) {
-        boolean res = false;
+        boolean res = true;
         LinkedList llist = new LinkedList();
         String str = scan.nextLine();
         for (int i = 0; i < str.length(); i++) {
