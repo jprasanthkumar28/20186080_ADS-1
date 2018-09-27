@@ -3,17 +3,42 @@ import java.util.Scanner;
  * Linked Lists.
  */
 class LinkedList {
+    /**
+     * Node variable.
+     */
     private Node head;
+    /**
+     * Class for node.
+     */
     private class Node {
+        /**
+         * character for item.
+         */
         private char item;
+        /**
+         * Node object for next.
+         */
         private Node next;
     }
+    /**
+     * Constructs the object.
+     */
     LinkedList() {
         this.head = null;
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return (head == null);
     }
+    /**
+     * to pop the element.
+     *
+     * @return     element on the top.
+     */
     public char pop() {
         if (head != null) {
             char value = head.item;
@@ -22,6 +47,11 @@ class LinkedList {
         }
         return '\0';
     }
+    /**
+     * to push the element.
+     *
+     * @param      value  The value
+     */
     public void push(final char value) {
         Node oldHead = head;
         head = new Node();
