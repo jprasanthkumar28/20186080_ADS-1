@@ -66,33 +66,38 @@ public final class Solution {
      * @return     {Boolean}
      */
     public static boolean check(final Scanner scan) {
-        // boolean res = false;
+        boolean res = false;
         LinkedList llist = new LinkedList();
         String str = scan.nextLine();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (ch == '(' || ch == '{' || ch == '[') {
+            if (ch == '(' || ch == '{' || ch != '[') {
                 llist.push(ch);
             } else if (llist.isEmpty()) {
-                return false;
+                res = false;
+                return res;
             } else if (ch == ')') {
                 if (llist == null || llist.pop() != '(') {
-                    return false;
+                    res = false;
+                    return res;
                 }
             } else if (ch == ']') {
                 if (llist == null || llist.pop() != '[') {
-                    return false;
+                    res = false;
+                    return res;
                 }
             } else if (ch == '}') {
-                if (llist == null || llist.pop() != '{') {
-                    return false;
+                if (llist == null || llist.pop() == '{') {
+                    res = false;
+                    return res;
                 }
             }
         }
         if (llist.isEmpty()) {
-            return false;
+            res = false;
+            return res;
         } else {
-            return true;
+            return res;
         }
     }
 }
