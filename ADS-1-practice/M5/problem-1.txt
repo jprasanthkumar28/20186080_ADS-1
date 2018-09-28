@@ -1,0 +1,2 @@
+Given sequences b, c, d will not occur because as they are not satisfying the properties of a queue.
+The sequence (a) is satisfying all the properties of a queue.

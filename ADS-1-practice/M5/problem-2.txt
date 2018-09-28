@@ -1,0 +1,2 @@
+In th given code, when we implement the first two lines of code, we can push and store the elements in the stack from the queue.
+But when we implement the next two lines of code, we will be able to pop the elements from the stack and store the elements in the queue in a reverse order.
