@@ -64,6 +64,12 @@ class LinkedList {
  * Class for add large numbers.
  */
 class AddLargeNumbers {
+    /**
+     * Constructs the object.
+     */
+    protected AddLargeNumbers() {
+
+    }
     /**.
      * number to digits.
      *
@@ -120,6 +126,12 @@ class AddLargeNumbers {
  */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    protected Solution() {
+
+    }
+    /**
      * main function.
      *
      * @param      args  The arguments
@@ -143,7 +155,7 @@ public class Solution {
             case "addLargeNumbers":
                 pDigits = AddLargeNumbers.numberToDigits(p);
                 qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = 
+                LinkedList result =
                 AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
