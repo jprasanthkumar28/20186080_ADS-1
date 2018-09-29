@@ -93,7 +93,9 @@ class AddLargeNumbers {
      */
     public static String digitsToNumber(final LinkedList list) {
         // LinkedList llist = new LinkedList();
-        return list.pop();
+        String temp = list.pop();
+        temp += list;
+        return temp;
     }
 
     /**
@@ -113,7 +115,6 @@ class AddLargeNumbers {
         // l = digitsToNumber(list1);
         l1 = numberToDigits(digitsToNumber(list1));
         l2 = numberToDigits(digitsToNumber(list2));
-
         return l1;
     }
     // public static LinkedList sum(LinkedList l11, LinkedList l22) {
