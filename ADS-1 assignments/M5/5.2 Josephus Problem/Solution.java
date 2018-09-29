@@ -101,15 +101,15 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);        
         int num = Integer.parseInt(scan.nextLine());
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             int count = Integer.parseInt(tokens[0]);
             int rounds = Integer.parseInt(tokens[1]);
-            String s = " ";
+            String s = "";
             Deque deque = new Deque();
-            for (int i = 0; i <= count; i++) {
+            for (int i = 0; i < count; i++) {
                 deque.pushBack(i);
             }
             while (!deque.isEmpty()) {
