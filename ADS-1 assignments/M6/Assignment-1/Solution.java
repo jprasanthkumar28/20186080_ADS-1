@@ -99,19 +99,35 @@ class AddLargeNumbers {
      * @return     the sum of the two linked lists.
      */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-    	LinkedList newlist1 = new LinkedList();
-    	// LinkedList newlist2 = new LinkedList();
     	// newlist1 = list1.pop();
-    	return newlist1;
+    	LinkedList l1 = new LinkedList();
+    	LinkedList l2 = new LinkedList();
+    	// LinkedList newlist = new LinkedList();
+    	// l = digitsToNumber(list1);
+    	l1 = numberToDigits(digitsToNumber(list1));
+    	l2 = numberToDigits(digitsToNumber(list2));
+
+    	return l1;
     }
 }
 
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
+        /**
+         * switch case.
+         */
         switch(input) {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
@@ -128,5 +144,4 @@ public class Solution {
                 break;
         }
     }
-    
 }
