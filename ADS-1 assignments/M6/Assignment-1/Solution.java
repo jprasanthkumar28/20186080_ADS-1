@@ -64,18 +64,18 @@ class LinkedList {
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-	/**
-	 * { function_description }
-	 *
-	 * @param      number  The number
-	 *
-	 * @return     the linked list object.
-	 */
-    public static LinkedList numberToDigits(String number) {
+    /**.
+     * number to digits.
+     *
+     * @param      number  The number
+     *
+     * @return     the linked list object.
+     */
+    public static LinkedList numberToDigits(final String number) {
     LinkedList llist = new LinkedList();
-    	llist.push(number);
-    	// System.out.println(Arrays.toString(llist));
-    	return llist;
+        llist.push(number);
+        // System.out.println(Arrays.toString(llist));
+        return llist;
     }
 
     /**
@@ -85,9 +85,9 @@ class AddLargeNumbers {
      *
      * @return     the String containing values of linked list.
      */
-    public static String digitsToNumber(LinkedList list) {
-    	// LinkedList llist = new LinkedList();
-    	return list.pop();
+    public static String digitsToNumber(final LinkedList list) {
+        // LinkedList llist = new LinkedList();
+        return list.pop();
     }
 
     /**
@@ -98,29 +98,33 @@ class AddLargeNumbers {
      *
      * @return     the sum of the two linked lists.
      */
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-    	// newlist1 = list1.pop();
-    	LinkedList l1 = new LinkedList();
-    	LinkedList l2 = new LinkedList();
-    	// LinkedList newlist = new LinkedList();
-    	// l = digitsToNumber(list1);
-    	l1 = numberToDigits(digitsToNumber(list1));
-    	l2 = numberToDigits(digitsToNumber(list2));
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+        final LinkedList list2) {
+        // newlist1 = list1.pop();
+        LinkedList l1 = new LinkedList();
+        LinkedList l2 = new LinkedList();
+        // LinkedList newlist = new LinkedList();
+        // l = digitsToNumber(list1);
+        l1 = numberToDigits(digitsToNumber(list1));
+        l2 = numberToDigits(digitsToNumber(list2));
 
-    	return l1;
+        return l1;
     }
+    // public static LinkedList sum(LinkedList l11, LinkedList l22) {
+    //  return l11 + l22;
+    // }
 }
 
 /**
  * Class for solution.
  */
 public class Solution {
-	/**
-	 * main function.
-	 *
-	 * @param      args  The arguments
-	 */
-    public static void main(String[] args) {
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -128,7 +132,7 @@ public class Solution {
         /**
          * switch case.
          */
-        switch(input) {
+        switch (input) {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
@@ -139,8 +143,11 @@ public class Solution {
             case "addLargeNumbers":
                 pDigits = AddLargeNumbers.numberToDigits(p);
                 qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                LinkedList result = 
+                AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
+                break;
+            default:
                 break;
         }
     }
