@@ -124,11 +124,11 @@ class Deque {
         } else {
             String s = "[";
             Node old1 = first;
-            while (old1 == null) {
+            while (old1 != null) {
                 s += old1.item + ", ";
                 old1 = old1.next;
             }
-            return s.substring(0, s.length() - 1) + "]";
+            return s.substring(0, s.length() - 2) + "]";
         }
     }
 }
@@ -152,7 +152,7 @@ public final class Solution {
         int n = Integer.parseInt(scan.nextLine());
         Deque deque = new Deque();
         while (scan.hasNext()) {
-            String[] tokens = scan.nextLine().split("");
+            String[] tokens = scan.nextLine().split(" ");
             switch (tokens[0]) {
             case "size":
                 int a = deque.getSize();
