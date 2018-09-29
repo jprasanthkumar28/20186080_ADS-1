@@ -101,7 +101,7 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);        
+        Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
@@ -116,7 +116,7 @@ public final class Solution {
                 for (int i = 0; i < rounds - 1; i++) {
                     deque.pushBack(deque.popFront());
                 }
-                s += deque.popFront() + "";
+                s += deque.popFront() + " ";
             }
             System.out.print(s.substring(0, s.length() - 1));
             System.out.println();
