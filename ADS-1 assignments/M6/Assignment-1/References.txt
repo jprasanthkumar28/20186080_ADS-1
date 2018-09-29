@@ -1,0 +1,3 @@
+httpsmail.google.commailu1#inbox
+
+https://codereview.stackexchange.com/questions/139737/generic-stack-array-and-linked-list-implementation

@@ -8,6 +8,9 @@ class LinkedList {
      * Node variable.
      */
     private Node head;
+    // public Node getHead() {
+    //     return this.head;
+    // }
     /**
      * Class for node.
      */
@@ -115,18 +118,21 @@ class AddLargeNumbers {
         // l = digitsToNumber(list1);
         l1 = numberToDigits(digitsToNumber(list1));
         l2 = numberToDigits(digitsToNumber(list2));
+        // LinkedList answer = l1 + addLargeNumbers1(l2);
         return l1;
     }
-    public static LinkedList add(LinkedList l1, LinkedList l2) {
-        int carry = 0;
-        int total = Integer.parseInt(l1.pop()) + Integer.parseInt(l2.pop()) + carry;
-        int num = total % 10;
-        carry = total / 10;
+    // public static LinkedList add(LinkedList l1, LinkedList l2) {
+    //     System.out.println("hiiiiiiiiiiiiiiiiiiiii");
+    //     String carry = "";
+    //     String total = Integer.parseInt(l1.pop()) + Integer.parseInt(l2.pop()) + carry;
+    //     LinkedList total = l1.pop() + l2.pop();
+    //     // String num = total % 10;
+    //     // carry = total / 10;
 
-        LinkedList result = new LinkedList();
-        LinkedList r = result;
-        return r;
-    }
+    //     // LinkedList result = new LinkedList();
+    //     // LinkedList r = result;
+    //     return total;
+    // }
 }
 
 /**
