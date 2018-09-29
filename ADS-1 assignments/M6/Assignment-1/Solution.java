@@ -94,7 +94,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
         // LinkedList llist = new LinkedList();
         String temp = list.pop();
-        temp += list;
+        // temp += list;
         return temp;
     }
 
