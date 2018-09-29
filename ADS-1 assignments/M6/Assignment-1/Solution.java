@@ -117,9 +117,16 @@ class AddLargeNumbers {
         l2 = numberToDigits(digitsToNumber(list2));
         return l1;
     }
-    // public static LinkedList sum(LinkedList l11, LinkedList l22) {
-    //  return l11 + l22;
-    // }
+    public static LinkedList add(LinkedList l1, LinkedList l2) {
+        int carry = 0;
+        int total = Integer.parseInt(l1.pop()) + Integer.parseInt(l2.pop()) + carry;
+        int num = total % 10;
+        carry = total / 10;
+
+        LinkedList result = new LinkedList();
+        LinkedList r = result;
+        return r;
+    }
 }
 
 /**
