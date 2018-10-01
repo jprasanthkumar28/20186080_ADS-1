@@ -154,7 +154,7 @@ public final class Solution {
                 switch (tokens[0]) {
                 case "push":
                     stqueue.push(Integer.parseInt(tokens[1]));
-                    System.out.println(stqueue.toString());
+                    System.out.println(stqueue);
                     break;
 
                 case "pop":
@@ -162,13 +162,13 @@ public final class Solution {
                     if (stqueue.isEmpty()) {
                         System.out.println("Steque is empty.");
                     } else {
-                        System.out.println(stqueue.toString());
+                        System.out.println(stqueue);
                     }
                     break;
 
                 case "enqueue":
                     stqueue.enqueue(Integer.parseInt(tokens[1]));
-                    System.out.println(stqueue.toString());
+                    System.out.println(stqueue);
                     break;
 
                 default:
