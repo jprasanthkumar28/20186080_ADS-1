@@ -34,13 +34,15 @@ class Steque {
     }
     /**
      * Constructs the object.
+     * Time complexity for Steque() is 1.
      */
     Steque() {
         head = null;
         tail = null;
     }
     /**
-     * to push.
+     * to add the element to the top.
+     * Time complexity for push() is constant.
      *
      * @param      value  The value
      */
@@ -60,8 +62,8 @@ class Steque {
         size++;
     }
     /**
-     * to enqueue the data.
-     *
+     * to add values at the end of the list.
+     * Time complexity for enqueue() is constant.
      * @param      value  The value
      */
     public void enqueue(final int value) {
@@ -81,7 +83,8 @@ class Steque {
         size++;
     }
     /**
-     * to pop the data.
+     * to remove the data from data.
+     * Time complexity for pop is constant.
      *
      * @return     the value on the top.
      */
@@ -112,6 +115,8 @@ class Steque {
     }
     /**
      * Returns a string representation of the object.
+     * Time complexity for toString() is n.
+     * n is the size of the list.
      *
      * @return     String representation of the object.
      */
@@ -136,10 +141,10 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-        //empty constructor.
+        //Unused constructor.
     }
     /**
-     * main function.
+     * Client function.
      *
      * @param      args  The arguments
      */
