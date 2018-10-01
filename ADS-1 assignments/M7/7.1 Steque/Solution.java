@@ -86,6 +86,11 @@ class Steque {
      * @return     the value on the top.
      */
     public int pop() {
+        if (isEmpty()) {
+                System.out.println("Steque is empty.");
+            } else {
+                System.out.println(toString());
+            }
         if (head != null) {
             int value = head.value;
             head = head.next;
@@ -159,11 +164,6 @@ public final class Solution {
 
                 case "pop":
                     stqueue.pop();
-                    // if (stqueue.isEmpty()) {
-                    //     System.out.println("Steque is empty.");
-                    // } else {
-                    //     System.out.println(stqueue.toString());
-                    // }
                     break;
 
                 case "enqueue":
