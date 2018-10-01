@@ -3,9 +3,9 @@ import java.util.Scanner;
  * Class for steque.
  */
 class Steque {
-	/**
-	 * head varible.
-	 */
+    /**
+     * head varible.
+     */
     private Node head;
     /**
      * tail node.
@@ -19,8 +19,17 @@ class Steque {
      * Class for node.
      */
     private class Node {
+        /**
+         * value variable.
+         */
         private int value;
+        /**
+         * next node varible.
+         */
         private Node next;
+        /**
+         * size variable.
+         */
         private int size = 0;
     }
     /**
@@ -123,9 +132,9 @@ class Steque {
  * Solution class.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //empty constructor.
     }
