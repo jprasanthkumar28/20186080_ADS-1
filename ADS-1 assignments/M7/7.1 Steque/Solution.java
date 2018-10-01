@@ -3,18 +3,38 @@ import java.util.Scanner;
  * Class for steque.
  */
 class Steque {
+	/**
+	 * head varible.
+	 */
     private Node head;
+    /**
+     * tail node.
+     */
     private Node tail;
+    /**
+     * size.
+     */
     private int size;
+    /**
+     * Class for node.
+     */
     private class Node {
         private int value;
         private Node next;
         private int size = 0;
     }
+    /**
+     * Constructs the object.
+     */
     Steque() {
         head = null;
         tail = null;
     }
+    /**
+     * to push.
+     *
+     * @param      value  The value
+     */
     public void push(final int value) {
         Node newnode = new Node();
         if (head == null) {
@@ -30,6 +50,11 @@ class Steque {
         }
         size++;
     }
+    /**
+     * to enqueue the data.
+     *
+     * @param      value  The value
+     */
     public void enqueue(final int value) {
         Node temp = new Node();
         if (tail == null || head == null) {
@@ -46,6 +71,11 @@ class Steque {
         }
         size++;
     }
+    /**
+     * to pop the data.
+     *
+     * @return     the value on the top.
+     */
     public int pop() {
         if (head != null) {
             int value = head.value;
@@ -55,12 +85,27 @@ class Steque {
         }
         return 0;
     }
+    /**
+     * size function.
+     *
+     * @return     size.
+     */
     public int size() {
         return size;
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return head == null || tail == null;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         if (size != 0) {
             String str = "";
@@ -74,7 +119,13 @@ class Steque {
         return "";
     }
 }
+/**
+ * Solution class.
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
     private Solution() {
         //empty constructor.
     }
