@@ -246,7 +246,7 @@ class SelectionSort {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public void exch(Cricket[] a, int i, int j) {
+    public void exch(final Cricket[] a, final int i, final int j) {
         Cricket swap = a[i];
         a[i] = a[j];
         a[j] = swap;
