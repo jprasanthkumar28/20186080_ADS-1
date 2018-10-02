@@ -170,7 +170,7 @@ class Cricket implements Comparable<Cricket> {
 /**
  * Class for selection sort.
  */
-class SelectionSort {
+class InsertionSort {
     /**
      * to store the champions.
      */
@@ -187,7 +187,7 @@ class SelectionSort {
      * Constructs the object.
      * Time complexity is 1.
      */
-    SelectionSort() {
+    InsertionSort() {
         // final int x = 10;
         this.champions = new Cricket[TEN];
         this.size = 0;
@@ -285,7 +285,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        SelectionSort match = new SelectionSort();
+        InsertionSort match = new InsertionSort();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
             match.add(new Cricket(tokens[0], Integer.parseInt(tokens[1]),
