@@ -241,6 +241,7 @@ class SelectionSort {
      * @param      a     { parameter_description }
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
+     * Tie complexity is N.
      */
     public void exch(final Cricket[] a, final int i, final int j) {
         Cricket swap = a[i];
