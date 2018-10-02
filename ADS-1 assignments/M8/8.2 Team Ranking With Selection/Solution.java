@@ -225,7 +225,7 @@ class SelectionSort {
      * Time complexity is N * N.
      */
     public void sort() {
-        for (int i = 1; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             int min = i;
             for (int j = i + 1; j < size; j++) {
                 if (champions[j].compareTo(champions[min]) == -1) {
