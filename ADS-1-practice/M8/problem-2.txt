@@ -1,0 +1,18 @@
+<-------------Insertion Sorting------------->
+
+Given Set ---------> E A S Y Q U E S T I O N
+
+
+E A S Y Q U E S T I O N-----(E = (i,j))
+[E] A S Y Q U E S T I O N-----(A = (i,j))
+[A, E] S Y Q U E S T I O N-----(S = (i,j))
+[A, E, S] Y Q U E S T I O N-----(Y = (i,j))
+[A, E, S, Y] Q U E S T I O N-----(Q = (i,j))
+[A, E, Q, S, Y] U E S T I O N-----(U = (i,j))
+[A, E, Q, S, U, Y] E S T I O N-----(E = (i,j))
+[A, E, E, Q, S, U, Y] S T I O N-----(S = (i,j))
+[A, E, E, Q, S, S, U, Y] T I O N-----(T = (i,j))
+[A, E, E, Q, S, S, T, U, Y] I O N-----(I = (i,j))
+[A, E, E, I, Q, S, S, T, U, Y] O N-----(O = (i,j))
+[A, E, E, I, O, Q, S, S, T, U, Y] N-----(N = (i,j))
+[A, E, E, I, N, O, Q, S, S, T, U, Y]

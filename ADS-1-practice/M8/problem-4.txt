@@ -1,0 +1,1 @@
+Selection sort works faster than insertion sort when the given array is in reverse order.Because in selection sort we ave N exchanges and in insertion sort we have (N^2)/4 exchanges.
