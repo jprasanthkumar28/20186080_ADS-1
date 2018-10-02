@@ -175,6 +175,9 @@ class SelectionSort {
      * to store the champions.
      */
     private Cricket[] champions;
+    /**
+     * for varaible ten.
+     */
     private static final int TEN = 10;
     /**
      * to get the size.
