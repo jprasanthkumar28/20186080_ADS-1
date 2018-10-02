@@ -46,6 +46,7 @@ class Cricket implements Comparable<Cricket> {
             return 1;
         } else if (this.getWins() > that.getWins()) {
             return -1;
+            // break;
         } else {
             if (this.getLosses() > that.getLosses()) {
                 return 1;
@@ -105,6 +106,23 @@ class SelectionSort {
             champions[j + 1] = tour;
         }
     }
+ //    private static boolean less(Cricket v, Cricket w) {
+ //    	return v.compareTo(w) < 0;
+ //    }
+ //    private static void exch(Cricket[] a, int i, int j) {
+	// 	Cricket swap = a[i];
+	// 	a[i] = a[j];
+	// 	a[j] = swap;
+	// }
+	// public void sort() {
+	// 	int N = champions.length;
+	// 	for (int i = 0; i < N; i++)
+	// 	for (int j = i; j > 0; j--)
+	// 	if (less(champions[j], champions[j-1]))
+	// 	exch(champions, j, j-1);
+	// 	else break;
+	// }
+
     public void display() {
         int i = 0;
         for (i = 0; i < size - 1; i++) {
