@@ -42,30 +42,31 @@ class Cricket implements Comparable<Cricket> {
         this.draws = d;
     }
     public int compareTo(final Cricket that) {
-    	// System.out.println("Prashu");
-
-        if ((this.getWins() < that.getWins())
-        	|| (this.getLosses() > that.getLosses()
-        		|| (this.getDraws() < that.getDraws())))  {
+        if (this.getWins() < that.getWins()) {
             return 1;
-    	} else {
-        	return -1;
-    	}
-        // } else if (this.getWins() < that.getWins()) {
-        //     return -1;
-        // } else {
-        //     if (this.getLosses() < that.getLosses()) {
-        //         return 1;
-        //     } else if (this.getLosses() > that.getLosses()) {
-        //         return -1;
-        //     } else {
-        //         if (this.getDraws() > that.getDraws()) {
-        //             return 1;
-        //         } else if (this.getDraws() < that.getDraws()) {
-        //             return -1;
-        //         }
-        //     }
-        // }
+        } else if (this.getWins() > that.getWins()) {
+            return -1;
+        } else {
+            if (this.getLosses() > that.getLosses()) {
+                return 1;
+            } else if (this.getLosses() < that.getLosses()) {
+                return -1;
+            } else {
+                if (this.getDraws() < that.getDraws()) {
+                    return 1;
+                } else if (this.getDraws() > that.getDraws()) {
+                    return -1;
+                }
+            }
+        }
+        return 0;
+     //    if ((this.getWins() < that.getWins())
+     //    	|| (this.getLosses() > that.getLosses()
+     //    		|| (this.getDraws() < that.getDraws())))  {
+     //        return 1;
+    	// } else {
+     //    	return -1;
+    	// }
     }
 
 }
