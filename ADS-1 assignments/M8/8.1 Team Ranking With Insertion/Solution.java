@@ -42,23 +42,24 @@ class Cricket implements Comparable<Cricket> {
         this.draws = d;
     }
     public int compareTo(final Cricket that) {
-        if (this.getWins() > that.getWins()) {
-            return 1;
-        } else if (this.getWins() < that.getWins()) {
-            return -1;
-        } else {
-            if (this.getLosses() < that.getLosses()) {
-                return 1;
-            } else if (this.getLosses() > that.getLosses()) {
-                return -1;
-            } else {
-                if (this.getDraws() > that.getDraws()) {
-                    return 1;
-                } else if (this.getDraws() < that.getDraws()) {
-                    return -1;
-                }
-            }
-        }
+
+        // if (this.getWins() > that.getWins()) {
+        //     return 1;
+        // } else if (this.getWins() < that.getWins()) {
+        //     return -1;
+        // } else {
+        //     if (this.getLosses() < that.getLosses()) {
+        //         return 1;
+        //     } else if (this.getLosses() > that.getLosses()) {
+        //         return -1;
+        //     } else {
+        //         if (this.getDraws() > that.getDraws()) {
+        //             return 1;
+        //         } else if (this.getDraws() < that.getDraws()) {
+        //             return -1;
+        //         }
+        //     }
+        // }
         return 0;
     }
 
