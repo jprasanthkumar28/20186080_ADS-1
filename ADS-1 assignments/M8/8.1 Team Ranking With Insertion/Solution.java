@@ -4,9 +4,9 @@ import java.util.Arrays;
  * Class for cricket.
  */
 class Cricket implements Comparable<Cricket> {
-	/**
-	 * teamName varaible.
-	 */
+    /**
+     * teamName varaible.
+     */
     private String teamName;
     /**
      * wins varaible.
@@ -25,9 +25,9 @@ class Cricket implements Comparable<Cricket> {
      * Time complexity is 1.
      */
     Cricket() {
-    	/**
-    	 * teamName varaible..
-    	 */
+        /**
+         * teamName varaible..
+         */
         this.teamName = null;
         /**
          * for wins varaible.
@@ -158,12 +158,12 @@ class Cricket implements Comparable<Cricket> {
         }
         return 0;
      //    if ((this.getWins() < that.getWins())
-     //    	|| (this.getLosses() > that.getLosses()
-     //    		|| (this.getDraws() < that.getDraws())))  {
+     //     || (this.getLosses() > that.getLosses()
+     //         || (this.getDraws() < that.getDraws())))  {
      //        return 1;
-    	// } else {
-     //    	return -1;
-    	// }
+        // } else {
+     //     return -1;
+        // }
     }
 
 }
@@ -171,10 +171,11 @@ class Cricket implements Comparable<Cricket> {
  * Class for selection sort.
  */
 class SelectionSort {
-	/**
-	 * to store the champions.
-	 */
+    /**
+     * to store the champions.
+     */
     private Cricket[] champions;
+    private static final int TEN = 10;
     /**
      * to get the size.
      */
@@ -184,8 +185,8 @@ class SelectionSort {
      * Time complexity is 1.
      */
     SelectionSort() {
-        final int x = 10;
-        this.champions = new Cricket[10];
+        // final int x = 10;
+        this.champions = new Cricket[TEN];
         this.size = 0;
     }
     /**
@@ -236,21 +237,21 @@ class SelectionSort {
         }
     }
  //    private static boolean less(Cricket v, Cricket w) {
- //    	return v.compareTo(w) < 0;
+ //     return v.compareTo(w) < 0;
  //    }
  //    private static void exch(Cricket[] a, int i, int j) {
-	// 	Cricket swap = a[i];
-	// 	a[i] = a[j];
-	// 	a[j] = swap;
-	// }
-	// public void sort() {
-	// 	int N = champions.length;
-	// 	for (int i = 0; i < N; i++)
-	// 	for (int j = i; j > 0; j--)
-	// 	if (less(champions[j], champions[j-1]))
-	// 	exch(champions, j, j-1);
-	// 	else break;
-	// }
+    //  Cricket swap = a[i];
+    //  a[i] = a[j];
+    //  a[j] = swap;
+    // }
+    // public void sort() {
+    //  int N = champions.length;
+    //  for (int i = 0; i < N; i++)
+    //  for (int j = i; j > 0; j--)
+    //  if (less(champions[j], champions[j-1]))
+    //  exch(champions, j, j-1);
+    //  else break;
+    // }
 
     /**
      * to display the data of class.
@@ -267,20 +268,25 @@ class SelectionSort {
 /**
  * Class for solution.
  */
-public class Solution {
-	/**
-	 * Constructs the object.
-	 */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Empty Contructor.
     }
+    /**
+     * client function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort match = new SelectionSort();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
             match.add(new Cricket(tokens[0], Integer.parseInt(tokens[1]),
-                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3])));
+                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1])));
         }
         match.sort();
         match.display();
