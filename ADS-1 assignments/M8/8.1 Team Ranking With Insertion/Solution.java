@@ -95,12 +95,12 @@ class SelectionSort {
         for (int i = 1; i < size; i++) {
             Cricket tour = champions[i];
             int j = i - 1;
-            int count = champions[i].compareTo(champions[j]);
+            int count = tour.compareTo(champions[j]);
             while (j >= 0 && count == -1) {
                 champions[j + 1] = champions[j];
                 j--;
-                if (j > 0) {
-                    count = champions[i].compareTo(champions[j]);
+                if (j >= 0) {
+                    count = tour.compareTo(champions[j]);
                 }
             }
             champions[j + 1] = tour;
