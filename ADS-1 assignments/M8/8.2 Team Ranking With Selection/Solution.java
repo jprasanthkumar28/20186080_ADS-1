@@ -235,10 +235,6 @@ class SelectionSort {
             exch(champions, i, min);
         }
     }
- //    private static boolean less(Cricket v, Cricket w) {
- //     return v.compareTo(w) < 0;
- //    }
-    
     /**
      * to swap.
      *
