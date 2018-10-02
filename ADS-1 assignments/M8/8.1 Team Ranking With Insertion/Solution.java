@@ -44,9 +44,9 @@ class Cricket implements Comparable<Cricket> {
     public int compareTo(final Cricket that) {
     	// System.out.println("Prashu");
 
-        if ((this.getWins() > that.getWins())
-        	|| (this.getLosses() < that.getLosses()
-        		|| (this.getDraws() > that.getDraws())))  {
+        if ((this.getWins() < that.getWins())
+        	|| (this.getLosses() > that.getLosses()
+        		|| (this.getDraws() < that.getDraws())))  {
             return 1;
     	} else {
         	return -1;
