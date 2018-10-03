@@ -8,8 +8,8 @@ class MergeSort {
      * final variable.
      */
     private final int SEVEN = 7;
-    /**
-     * int array size variable.;;
+    /**.
+     * int array size variable.
      */
     private int[] array;
     /**
@@ -170,7 +170,7 @@ class MergeSort {
      * @param      lo     The lower
      * @param      hi     The higher
      */
-    public void sort(final Comparable[] array2, 
+    public void sort(final Comparable[] array2,
         final Comparable[] aux, final int lo, final int hi) {
         if (hi <= lo + SEVEN) {
             insertionSort(aux, lo, hi);
@@ -184,13 +184,19 @@ class MergeSort {
             for (int i = lo; i <= hi; i++) {
                 aux[i] = array2[i];
             }
-            System.out.println
-            ("Array is already sorted. So, skipped the call to merge...");
+            System.out.println(
+            "Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merging(array2, aux, lo, mid, hi);
     }
-    // print array to standard output
+    /**
+     * { function_description }
+     *
+     * @param      a     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Object display(final Object[] a) {
         String str = "[";
         int i;
