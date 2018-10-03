@@ -7,7 +7,7 @@ class MergeSort {
     /**.
      * final variable.
      */
-    private final int NUM = 7;
+    private final int cutoff = 7;
     /**.
      * int array size variable.
      */
@@ -172,7 +172,7 @@ class MergeSort {
      */
     public void sort(final Comparable[] array2,
         final Comparable[] aux, final int lo, final int hi) {
-        if (hi <= lo + NUM) {
+        if (hi <= lo + cutoff) {
             insertionSort(aux, lo, hi);
             System.out.println("Insertion sort method invoked...");
             return;
