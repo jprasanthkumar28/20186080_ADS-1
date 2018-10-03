@@ -82,7 +82,7 @@ class MergeSort {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public void exch(Object[] a, int i, int j) {
+    public void exch(final Object[] a, final int i, final int j) {
         Object swap = a[i];
         a[i] = a[j];
         a[j] = swap;
@@ -179,7 +179,8 @@ class MergeSort {
             for (int i = lo; i <= hi; i++) {
                 aux[i] = array[i];
             }
-        System.out.println("Array is already sorted.So, skipped the call to merge...");
+            System.out.println
+            ("Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merging(array, aux, lo, mid, hi);
