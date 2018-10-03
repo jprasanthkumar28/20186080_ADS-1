@@ -4,10 +4,10 @@ import java.util.Arrays;
  * Class for merge sort.
  */
 class MergeSort {
-    /**
+    /**.
      * final variable.
      */
-    private final int Seven = 7;
+    private final int SEVEN = 7;
     /**
      * int array size variable.;;
      */
@@ -64,10 +64,14 @@ class MergeSort {
         assert isSorted(a);
     }
     /**
-     * insertion sort.
-     * Time complexity is O(N).
+     * insertion sort. Time complexity is O(N).
+     *
+     * @param      a     { parameter_description }
+     * @param      lo    The lower
+     * @param      hi    The higher
      */
-    public void insertionSort(final Comparable[] a, final int lo, final int hi) {
+    public void insertionSort(final Comparable[] a,
+        final int lo, final int hi) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
                 exch(a, j, j - 1);
@@ -133,59 +137,58 @@ class MergeSort {
      * to merge the data.
      * Time complexity is O(N).
      *
-     * @param      array  The array
+     * @param      array1  The array
      * @param      aux    The auxiliary
      * @param      lo     The lower
      * @param      mid    The middle
      * @param      hi     The higher
      */
-    public void merging(final Comparable[] array,
+    public void merging(final Comparable[] array1,
         final Comparable[] aux, final int lo, final int mid, final int hi) {
-        assert isSorted(array, lo, mid);
-        assert isSorted(array, mid + 1, hi);
+        assert isSorted(array1, lo, mid);
+        assert isSorted(array1, mid + 1, hi);
         int i = lo;
         int j = mid + 1;
         for (int k = lo; k <= hi; k++) {
             if (i > mid) {
-                aux[k] = array[j++];
+                aux[k] = array1[j++];
             } else if (j > hi) {
-                aux[k] = array[i++];
-            } else if (less(array[j], array[i])) {
-                aux[k] = array[j++];
+                aux[k] = array1[i++];
+            } else if (less(array1[j], array1[i])) {
+                aux[k] = array1[j++];
             } else {
-                aux[k] = array[i++];
+                aux[k] = array1[i++];
             }
         }
         assert isSorted(aux, lo, hi);
     }
     /**
-     * To sort.
-     * Time complexity is O(Log(N)).
+     * To sort. Time complexity is O(Log(N)).
      *
-     * @param      array  The array
+     * @param      array2  The array
      * @param      aux    The auxiliary
      * @param      lo     The lower
      * @param      hi     The higher
      */
-    public void sort(final Comparable[] array, final Comparable[] aux, int lo,
-        final int hi) {
-        if (hi <= lo + Seven) {
+    public void sort(final Comparable[] array2, 
+        final Comparable[] aux, final int lo, final int hi) {
+        if (hi <= lo + SEVEN) {
             insertionSort(aux, lo, hi);
             System.out.println("Insertion sort method invoked...");
             return;
         }
         int mid = lo + (hi - lo) / 2;
-        sort(aux, array, lo, mid);
-        sort(aux, array, mid + 1, hi);
-        if (!less(array[mid + 1], array[mid])) {
+        sort(aux, array2, lo, mid);
+        sort(aux, array2, mid + 1, hi);
+        if (!less(array2[mid + 1], array2[mid])) {
             for (int i = lo; i <= hi; i++) {
-                aux[i] = array[i];
+                aux[i] = array2[i];
             }
             System.out.println
             ("Array is already sorted. So, skipped the call to merge...");
             return;
         }
-        merging(array, aux, lo, mid, hi);
+        merging(array2, aux, lo, mid, hi);
     }
     // print array to standard output
     public Object display(final Object[] a) {
