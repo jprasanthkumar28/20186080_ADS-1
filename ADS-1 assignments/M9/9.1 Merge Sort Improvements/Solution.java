@@ -7,7 +7,7 @@ class MergeSort {
     /**.
      * final variable.
      */
-    private final int SEVEN = 7;
+    private final int NUM = 7;
     /**.
      * int array size variable.
      */
@@ -172,7 +172,7 @@ class MergeSort {
      */
     public void sort(final Comparable[] array2,
         final Comparable[] aux, final int lo, final int hi) {
-        if (hi <= lo + SEVEN) {
+        if (hi <= lo + NUM) {
             insertionSort(aux, lo, hi);
             System.out.println("Insertion sort method invoked...");
             return;
@@ -190,7 +190,7 @@ class MergeSort {
         }
         merging(array2, aux, lo, mid, hi);
     }
-    /**
+    /**.
      * { function_description }
      *
      * @param      a     { parameter_description }
@@ -217,6 +217,11 @@ public final class Solution {
     private Solution() {
         //Unused Constructor.
     }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         MergeSort sortedd = new MergeSort();
