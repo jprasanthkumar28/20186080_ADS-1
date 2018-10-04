@@ -80,6 +80,14 @@ class LinkedList {
 	public void insertAt(int position, int value) {
 		insertAt(head, position, value);
 	}
+	/**
+	 * to insert the element using position and value that to be inserted.
+	 * 
+	 *
+	 * @param      node      The node
+	 * @param      position  The position
+	 * @param      value     The value
+	 */
 	private void insertAt(Node node, int position, int value) {
 		if (position == 0 && head == null) {
 			head = new Node(value);
@@ -99,6 +107,13 @@ class LinkedList {
 		}
 		size++;
 	}
+	/**
+	 * to reverse the linked list.
+	 *
+	 * @param      head  The head
+	 *
+	 * @return     reversed list.
+	 */
 	private Node reverse(Node head) {
 		if (head == null || head.next == null) {
 			return head;
@@ -108,9 +123,17 @@ class LinkedList {
 		head.next = null;
 		return temp;
 	}
+	/**
+	 * to reverse.
+	 */
 	public void reverse() {
 		head = reverse(head);
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String s = "";
 		if (size != 0) {
@@ -124,8 +147,13 @@ class LinkedList {
 	}
 
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
-
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
