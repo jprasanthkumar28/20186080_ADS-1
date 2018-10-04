@@ -41,8 +41,8 @@ class Node {
      *
      * @param      value  The value
      */
-    public void setNext(final Node value) {
-        this.next = value;
+    public void setNext(final Node value1) {
+        this.next = value1;
     }
 }
 /**
