@@ -3,186 +3,202 @@ import java.util.Scanner;
  * Class for node.
  */
 class Node {
-	/**
-	 * value varaible.
-	 */
-	public int value;
-	/**
-	 * next varaible.
-	 */
-	public Node next;
-	/**
-	 * Constructs the object.
-	 * Time complexity is 1.
-	 *
-	 * @param      data  The data
-	 */
-	Node(int data) {
-		value = data;
-		next = null;
-	}
-	/**
-	 * Gets the next.
-	 * Time complexity is 1.
-	 *
-	 * @return     The next.
-	 */
-	public Node getNext() {
-		return next;
-	}
+    /**
+     * variable declarartion.
+     */
+    private int value;
+    /**
+     * variable declarartion.
+     */
+    private Node next;
+    /**
+     * Constructs the object.
+     *
+     * @param      data  The data
+     */
+    Node(final int data) {
+        value = data;
+        next = null;
+    }
+    /**
+     * Gets the value.
+     *
+     * @return     The value.
+     */
+    public int getValue() {
+        return value;
+    }
+    /**
+     * Gets the next.
+     *
+     * @return     The next.
+     */
+    public Node getNext() {
+        return next;
+    }
+    /**.
+     * Sets the next.
+     *
+     * @param      value  The value
+     */
+    public void setNext(final Node value) {
+        this.next = value;
+    }
 }
 /**
  * List of linkeds.
  */
 class LinkedList {
-	/**
-	 * head varaible.
-	 */
-	private Node head;
-	/**
-	 * size varaible.
-	 */
-	private int size;
-	/**
-	 * Constructs the object.
-	 * Time complexity is 1.
-	 */
-	LinkedList() {
-		head = null;
-		size = 0;
-	}
-	/**
-	 * to get the size of the list.
-	 * Time complexity is 1.
-	 *
-	 * @return     size.
-	 */
-	public int length() {
-		return size;
-	}
-	/**
-	 * Determines if empty.
-	 * Time complexity is 1.
-	 *
-	 * @return     True if empty, False otherwise.
-	 */
-	public boolean isEmpty() {
-		return head == null;
-	}
-	/**
-	 * to insert the element using position and value that to be inserted.
-	 * Time complexity is 1.
-	 * 
-	 *
-	 * @param      position  The position
-	 * @param      value    The value 1
-	 */
-	public void insertAt(int position, int value) {
-		insertAt(head, position, value);
-	}
-	/**
-	 * to insert the element using position and value that to be inserted.
-	 * 
-	 *
-	 * @param      node      The node
-	 * @param      position  The position
-	 * @param      value     The value
-	 */
-	private void insertAt(Node node, int position, int value) {
-		if (position == 0 && head == null) {
-			head = new Node(value);
-		} else if (position == 0 && head != null) {
-			Node oldhead = head;
-			head = new Node(value);
-			head.next = oldhead;
-		} else {
-			Node temp = head;
-			for (int i = 0; i < position - 1; i++) {
-				temp = temp.getNext();
-			}
-			Node nextNode = temp.getNext();
-			node = new Node(value);
-			temp.next = node;
-			node.next = nextNode;
-		}
-		size++;
-	}
-	/**
-	 * to reverse the linked list.
-	 *
-	 * @param      head  The head
-	 *
-	 * @return     reversed list.
-	 */
-	private Node reverse(Node head) {
-		if (head == null || head.next == null) {
-			return head;
-		}
-		Node temp = reverse(head.next);
-		head.next.next = head;
-		head.next = null;
-		return temp;
-	}
-	/**
-	 * to reverse.
-	 */
-	public void reverse() {
-		head = reverse(head);
-	}
-	/**
-	 * Returns a string representation of the object.
-	 *
-	 * @return     String representation of the object.
-	 */
-	public String toString() {
-		String s = "";
-		if (size != 0) {
-			Node temp = head;
-			while (temp != null) {
-				s += temp.value + ", ";
-				temp = temp.next;
-			}
-		}
-		return s.substring(0, s.length() - 2);
-	}
+    /**
+     * variable declaration.
+     */
+    private Node head;
+    /**
+     * variable declaration.
+     */
+    private int size;
+    /**
+     * Constructs the object.
+     */
+    LinkedList() {
+        head = null;
+        size = 0;
+    }
+    /**
+     *size of list.
+     *
+     * @return length.
+     */
+    public int length() {
+        return size;
+    }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
+    public boolean isEmpty() {
+        return head == null;
+    }
+    /**
+     * insert at position.
+     *
+     * @param      position  The position
+     * @param      value     The value 1
+     */
+    public void insertAt(final int position, final int value) {
+        insertAt(head, position, value);
+    }
+    /**
+     * insert at position.
+     *
+     * @param      node      The node
+     * @param      position  The position
+     * @param      value     The value 1
+     */
+    private void insertAt(final Node node,
+                          final int position, final int value) {
+        if (position == 0 && head == null) {
+            head = new Node(value);
+        } else if (position == 0 && head != null) {
+            Node oldhead = head;
+            head = new Node(value);
+            head.setNext(oldhead);
+        } else {
+            Node temp = head;
+            for (int i = 0; i < position - 1; i++) {
+                temp = temp.getNext();
+            }
+            Node nextNode = temp.getNext();
+            Node node1 = new Node(value);
+            temp.setNext(node1);
+            node1.setNext(nextNode);
+        }
+        size++;
+    }
+    /**
+     * reverse.
+     */
+    public void reverse() {
+        head = reverse(head);
+    }
+    /**
+     *reverse of list.
+     *
+     * @param      head1  The head
+     *
+     * @return  node.
+     */
+    private Node reverse(final Node head1) {
+        if (head1 == null || head1.getNext() == null) {
+            return head1;
+        }
+        Node temp = reverse(head1.getNext());
+        head1.getNext().setNext(head1);
+        head1.setNext(null);
+        return temp;
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        String s = "";
+        if (size != 0) {
+            Node temp = head;
+            while (temp != null) {
+                s += temp.getValue() + ", ";
+                temp = temp.getNext();
+            }
+        }
+        return s.substring(0, s.length() - 2);
+    }
 
 }
 /**
  * Class for solution.
  */
-public class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		LinkedList list = new LinkedList();
-		while (scan.hasNext()) {
-			String[] tokens = scan.nextLine().split(" ");
-			switch (tokens[0]) {
-			case "insertAt":
-				if (Integer.parseInt(tokens[1]) < 0 || Integer.parseInt(
-                        tokens[1]) > list.length() + 1) {
-                        System.out.println("Can't insert at this position.");
-                    } else {
-                        list.insertAt(Integer.parseInt(tokens[1]),
-                            Integer.parseInt(tokens[2]));
-                        System.out.println(list.toString());
-                    }
+    }
+    /**
+     * client program.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinkedList llobj = new LinkedList();
+        while (sc.hasNext()) {
+            String[] tokens = sc.nextLine().split(" ");
+            switch (tokens[0]) {
+            case "insertAt":
+                if (Integer.parseInt(tokens[1]) < 0 || Integer.parseInt(
+                            tokens[1]) > llobj.length() + 1) {
+                    System.out.println("Can't insert at this position.");
+                } else {
+                    llobj.insertAt(Integer.parseInt(tokens[1]),
+                                   Integer.parseInt(tokens[2]));
+                    System.out.println(llobj.toString());
+                }
+                break;
+            case "reverse":
+                if (!llobj.isEmpty()) {
+                    llobj.reverse();
+                    System.out.println(llobj.toString());
+                } else {
+                    System.out.println("No elements to reverse.");
                     break;
-			case "reverse":
-				if (!list.isEmpty()) {
-					list.reverse();
-					System.out.println(list.toString());
-				} else {
-					System.out.println("No elements to reverse.");
-					break;
-				}
-			}
-		}
+                }
+            default:
+                break;
+            }
+        }
 
-	}
+    }
 }
