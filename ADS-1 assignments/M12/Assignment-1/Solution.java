@@ -334,18 +334,19 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort stu = new SelectionSort();
-        int line = scan.nextInt();
         while (scan.hasNextLine()) {
+            int num = scan.nextInt();
+            // String line = scan.nextLine();
             int vacancies = scan.nextInt();
             int unreserved = scan.nextInt();
             int categoryBC = scan.nextInt();
             int categorySC = scan.nextInt();
             int categoryST = scan.nextInt();
             String[] tokens = scan.nextLine().split(",");
-            // stu.add(new Student(tokens[0], tokens[1],
-            //     Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
-            //     Integer.parseInt(tokens[2 + 2]),
-            //     Integer.parseInt(tokens[FIVE]), tokens[SIX]));
+            stu.add(new Student(tokens[0], tokens[1],
+                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
+                Integer.parseInt(tokens[2 + 2]),
+                Integer.parseInt(tokens[FIVE]), tokens[SIX]));
             // stu.add(new Student());
             // System.out.println(Arrays.toString(tokens));
         }
