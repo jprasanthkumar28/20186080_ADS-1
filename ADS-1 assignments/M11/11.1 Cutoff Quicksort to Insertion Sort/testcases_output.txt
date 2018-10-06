@@ -1,0 +1,332 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+Priyanka,70,Open
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+vani,50,Open
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Aditya,80,ST
+priya,72,SC
+Your Output: 
+insertionSort called
+[4]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Sorting.partition(Solution.java:47)
+	at Sorting.sort(Solution.java:34)
+	at Sorting.sort(Solution.java:40)
+	at Solution.main(Solution.java:87)
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+[P, O, R, E, E, L, A, M, S, X, T]
+[A, O, M, E, E, L, P, R, S, X, T]
+[A, O, M, E, E, L, P, R, S, X, T]
+insertionSort called
+[A, L, M, E, E, O, P, R, S, X, T]
+[A, E, E, L, M, O, P, R, S, X, T]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[A, E, E, L, M, O, P, R, S, T, X]
+[E, A, E, Y, Q, U, S, S, T, I, O, N]
+insertionSort called
+[A, E, E, N, Q, U, S, S, T, I, O, Y]
+[A, E, E, I, N, U, S, S, T, Q, O, Y]
+insertionSort called
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[A, E, E, I, N, O, Q, S, S, T, U, Y]
+Your Output: 
+[P, O, R, E, E, L, A, M, S, X, T]
+[A, O, M, E, E, L, P, R, S, X, T]
+[A, O, M, E, E, L, P, R, S, X, T]
+insertionSort called
+[A, L, M, E, E, O, P, R, S, X, T]
+[A, E, E, L, M, O, P, R, S, X, T]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[A, E, E, L, M, O, P, R, S, T, X]
+[E, A, E, Y, Q, U, S, S, T, I, O, N]
+insertionSort called
+[A, E, E, N, Q, U, S, S, T, I, O, Y]
+[A, E, E, I, N, U, S, S, T, Q, O, Y]
+insertionSort called
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[A, E, E, I, N, O, Q, S, S, T, U, Y]
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:80)
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+[1, 2, 3, 4, 5, 6, 7]
+insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
+insertionSort called
+insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+insertionSort called
+[-7, -8, 7, 6, 5, 4, -9, 8, 9]
+[-7, -8, 7, 6, 5, 4, -9, 8, 9]
+insertionSort called
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
+insertionSort called
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
+[11121.55, 12122.45, 12123.44, 13212.54]
+insertionSort called
+insertionSort called
+[11121.55, 12122.45, 12123.44, 13212.54]
+[egg, few, hut, men, jay]
+insertionSort called
+insertionSort called
+[egg, few, hut, jay, men]
+[gig, joy, owl, rap, wee]
+insertionSort called
+insertionSort called
+[gig, joy, owl, rap, wee]
+insertionSort called
+[fee, tap, tar, wad, was]
+insertionSort called
+[all, bad, dug, jam, yet]
+Your Output: 
+[1, 2, 3, 4, 5, 6, 7]
+insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
+insertionSort called
+insertionSort called
+[1, 2, 3, 4, 5, 6, 7]
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+insertionSort called
+[-7, -8, 7, 6, 5, 4, -9, 8, 9]
+[-7, -8, 7, 6, 5, 4, -9, 8, 9]
+insertionSort called
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
+[-7, -8, -9, 6, 5, 4, 7, 8, 9]
+insertionSort called
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+insertionSort called
+[-7, -8, -9, 4, 5, 6, 7, 8, 9]
+[11121.55, 12122.45, 12123.44, 13212.54]
+insertionSort called
+insertionSort called
+[11121.55, 12122.45, 12123.44, 13212.54]
+[egg, few, hut, men, jay]
+insertionSort called
+insertionSort called
+[egg, few, hut, jay, men]
+[gig, joy, owl, rap, wee]
+insertionSort called
+insertionSort called
+[gig, joy, owl, rap, wee]
+insertionSort called
+[fee, tap, tar, wad, was]
+insertionSort called
+[all, bad, dug, jam, yet]
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:80)
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+[bed, bug, dad, yes, zoo]
+insertionSort called
+[bed, bug, dad, yes, zoo]
+insertionSort called
+insertionSort called
+[bed, bug, dad, yes, zoo]
+insertionSort called
+[dim, for, ilk, now, tip]
+insertionSort called
+[jot, nob, sky, sob, tag]
+[001, 100, 1, 010, 100, 110, 101]
+[001, 100, 1, 010, 100, 110, 101]
+insertionSort called
+[001, 010, 1, 100, 100, 110, 101]
+insertionSort called
+insertionSort called
+insertionSort called
+[001, 010, 1, 100, 100, 101, 110]
+[122, 112, 121, 123, 132, 133, 131]
+insertionSort called
+insertionSort called
+[112, 121, 122, 123, 131, 132, 133]
+Your Output: 
+[bed, bug, dad, yes, zoo]
+insertionSort called
+[bed, bug, dad, yes, zoo]
+insertionSort called
+insertionSort called
+[bed, bug, dad, yes, zoo]
+insertionSort called
+[dim, for, ilk, now, tip]
+insertionSort called
+[jot, nob, sky, sob, tag]
+[001, 100, 1, 010, 100, 110, 101]
+[001, 100, 1, 010, 100, 110, 101]
+insertionSort called
+[001, 010, 1, 100, 100, 110, 101]
+insertionSort called
+insertionSort called
+insertionSort called
+[001, 010, 1, 100, 100, 101, 110]
+[122, 112, 121, 123, 132, 133, 131]
+insertionSort called
+insertionSort called
+[112, 121, 122, 123, 131, 132, 133]
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:80)
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+insertionSort called
+[1234567890]
+[]
+[-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7]
+insertionSort called
+[-1, -5, -2, -7, -3, -6, -4, 1, 4, 5, 3, 6, 2, 7]
+[-1, -3, -2, -4, -5, -6, -7, 1, 4, 5, 3, 6, 2, 7]
+[-1, -2, -3, -4, -5, -6, -7, 1, 4, 5, 3, 6, 2, 7]
+insertionSort called
+insertionSort called
+insertionSort called
+[-1, -2, -3, -4, -5, -6, -7, 1, 3, 2, 4, 6, 5, 7]
+insertionSort called
+[-1, -2, -3, -4, -5, -6, -7, 1, 2, 3, 4, 5, 6, 7]
+insertionSort called
+insertionSort called
+[-1, -2, -3, -4, -5, -6, -7, 1, 2, 3, 4, 5, 6, 7]
+Your Output: 
+insertionSort called
+[1234567890]
+[ ]
+[-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7]
+insertionSort called
+[-1, -5, -2, -7, -3, -6, -4, 1, 4, 5, 3, 6, 2, 7]
+[-1, -3, -2, -4, -5, -6, -7, 1, 4, 5, 3, 6, 2, 7]
+[-1, -2, -3, -4, -5, -6, -7, 1, 4, 5, 3, 6, 2, 7]
+insertionSort called
+insertionSort called
+insertionSort called
+[-1, -2, -3, -4, -5, -6, -7, 1, 3, 2, 4, 6, 5, 7]
+insertionSort called
+[-1, -2, -3, -4, -5, -6, -7, 1, 2, 3, 4, 5, 6, 7]
+insertionSort called
+insertionSort called
+[-1, -2, -3, -4, -5, -6, -7, 1, 2, 3, 4, 5, 6, 7]
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:80)
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+divya,99,ST
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Priyanka,70,Open
+Tanya,66,SC
+varsha,66,BC
+yash,61,Open
+Abhishek,60,SC
+Ankit,58,SC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Anjali,38,SC
+Manoj,32,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+varsha,66,BC
+Your Output: 
+insertionSort called
+[8]
+insertionSort called
+[1]
+insertionSort called
+[Ajay,12-06-1993,32,33,11,76,Open]
+Exception in thread "main" java.lang.NumberFormatException: For input string: "priya,13-08-1993,21,40,11,72,SC"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:80)
+----------------------------------------
