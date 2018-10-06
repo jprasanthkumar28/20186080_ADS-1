@@ -183,7 +183,6 @@ class Student implements Comparable<Student> {
             return 1;
         } else if (this.getTotal() > that.getTotal()) {
             return -1;
-            // break;
         } else {
             if (this.getMarks3() > that.getMarks3()) {
                 return 1;
@@ -198,13 +197,6 @@ class Student implements Comparable<Student> {
             }
         }
         return 0;
-     //    if ((this.getWins() < that.getWins())
-     //     || (this.getLosses() > that.getLosses()
-     //         || (this.getDraws() < that.getDraws())))  {
-     //        return 1;
-        // } else {
-     //     return -1;
-        // }
      // else {
                 //     if (this.getDob() < that.getDob()) {
                 //         return 1;
@@ -342,20 +334,20 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort stu = new SelectionSort();
+        int line = scan.nextInt();
         while (scan.hasNextLine()) {
-            String line = scan.nextLine();
             int vacancies = scan.nextInt();
             int unreserved = scan.nextInt();
             int categoryBC = scan.nextInt();
             int categorySC = scan.nextInt();
             int categoryST = scan.nextInt();
-            String[] tokens = line.split(",");
+            String[] tokens = scan.nextLine().split(",");
             // stu.add(new Student(tokens[0], tokens[1],
             //     Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
             //     Integer.parseInt(tokens[2 + 2]),
             //     Integer.parseInt(tokens[FIVE]), tokens[SIX]));
-            stu.add(new Student());
-            System.out.println(Arrays.toString(tokens));
+            // stu.add(new Student());
+            // System.out.println(Arrays.toString(tokens));
         }
         stu.sort();
         stu.display();

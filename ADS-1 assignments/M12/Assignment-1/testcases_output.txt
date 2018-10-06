@@ -31,13 +31,12 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-[23]
 Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:347)
+	at Solution.main(Solution.java:339)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -81,13 +80,12 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-[30]
 Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:347)
+	at Solution.main(Solution.java:339)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -106,13 +104,12 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-[10]
 Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:347)
+	at Solution.main(Solution.java:339)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -134,13 +131,12 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-[10]
 Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:347)
+	at Solution.main(Solution.java:339)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -189,13 +185,12 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-[30]
 Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:347)
+	at Solution.main(Solution.java:339)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -246,11 +241,10 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-[30]
 Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:347)
+	at Solution.main(Solution.java:339)
 ----------------------------------------
