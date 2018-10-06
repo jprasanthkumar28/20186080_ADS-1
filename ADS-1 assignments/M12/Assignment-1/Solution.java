@@ -328,6 +328,9 @@ public final class Solution {
      * varible six.
      */
     private static final int SIX = 6;
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Empty Contructor.
     }
@@ -349,7 +352,8 @@ public final class Solution {
             String[] tokens = line.split(",");
             stu.add(new Student(tokens[0], tokens[1],
                 Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
-                Integer.parseInt(tokens[2 + 2]), Integer.parseInt(tokens[FIVE]), tokens[SIX]));
+                Integer.parseInt(tokens[2 + 2]),
+                Integer.parseInt(tokens[FIVE]), tokens[SIX]));
             // stu.add(tokens);
             System.out.println(Arrays.toString(tokens));
         }

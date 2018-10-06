@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:331:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:352: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
