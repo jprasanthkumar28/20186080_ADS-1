@@ -1,15 +1,5 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:198: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:228:30: Name 'Hundred' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:316: Missing a Javadoc comment. [JavadocType]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:331: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:332: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:342:70: '3' is a magic number. [MagicNumber]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:343: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:343:41: '4' is a magic number. [MagicNumber]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:343:70: '5' is a magic number. [MagicNumber]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:343:82: '6' is a magic number. [MagicNumber]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:331:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M12\Assignment-1\Solution.java:352: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 2 errors.

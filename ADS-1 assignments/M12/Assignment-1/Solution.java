@@ -22,7 +22,7 @@ class Student implements Comparable<Student> {
     private int marks2;
     /**
      * marks3 varaible.
-     */    
+     */
     private int marks3;
     /**
      * total marks varaible.
@@ -195,7 +195,7 @@ class Student implements Comparable<Student> {
                 } else if (this.getMarks2() > that.getMarks2()) {
                     return -1;
                 }
-            } 
+            }
         }
         return 0;
      //    if ((this.getWins() < that.getWins())
@@ -225,7 +225,7 @@ class SelectionSort {
     /**
      * for varaible ten.
      */
-    private static final int Hundred = 100;
+    private static final int HUN = 100;
     /**
      * to get the size.
      */
@@ -236,7 +236,7 @@ class SelectionSort {
      */
     SelectionSort() {
         // final int x = 10;
-        this.students = new Student[Hundred];
+        this.students = new Student[HUN];
         this.size = 0;
     }
     /**
@@ -313,10 +313,21 @@ class SelectionSort {
 
     }
 }
+/**
+ * client class.
+ */
 public final class Solution {
     /**
      * Constructs the object.
      */
+    /**
+     * variable five.
+     */
+    private static final int FIVE = 5;
+    /**
+     * varible six.
+     */
+    private static final int SIX = 6;
     private Solution() {
         //Empty Contructor.
     }
@@ -328,8 +339,6 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort stu = new SelectionSort();
-        
-        
         while (scan.hasNextLine()) {
             String line = scan.nextLine();
             int vacancies = scan.nextInt();
@@ -339,8 +348,8 @@ public final class Solution {
             int categoryST = scan.nextInt();
             String[] tokens = line.split(",");
             stu.add(new Student(tokens[0], tokens[1],
-                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]),
-                Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]));
+                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
+                Integer.parseInt(tokens[2 + 2]), Integer.parseInt(tokens[FIVE]), tokens[SIX]));
             // stu.add(tokens);
             System.out.println(Arrays.toString(tokens));
         }
