@@ -1,17 +1,7 @@
 Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:14:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:27:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:39:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:65:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:70: Missing a Javadoc comment. [JavadocType]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:72:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:73: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:75:1: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:94:8: Unused @param tag for 'arrayay'. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:97:41: Expected @param tag for 'array'. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:150: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 4 errors.
