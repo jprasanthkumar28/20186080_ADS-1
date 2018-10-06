@@ -1,24 +1,62 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for student.
+ */
 class Student implements Comparable<Student> {
+    /**
+     * student name varaible.
+     */
     private String studentName;
+    /**
+     * dob varaible.
+     */
     private String dob;
-    private double marks1;
-    private double marks2;
-    private double marks3;
-    private double total;
+    /**
+     * marks1 varaible.
+     */
+    private int marks1;
+    /**
+     * marks2 varaible.
+     */
+    private int marks2;
+    /**
+     * marks3 varaible.
+     */    
+    private int marks3;
+    /**
+     * total marks varaible.
+     */
+    private int total;
+    /**
+     * to category varaible.
+     */
     private String category;
+    /**
+     * Constructs the object.
+     */
     Student() {
         this.studentName = null;
         this.dob = null;
-        this.marks1 = 0.0;
-        this.marks2 = 0.0;
-        this.marks3 = 0.0;
-        this.total = 0.0;
+        this.marks1 = 0;
+        this.marks2 = 0;
+        this.marks3 = 0;
+        this.total = 0;
         this.category = null;
     }
-    Student(final String name, final String birth, final double m1,
-        final double m2, final double m3, final double full,
+    /**
+     * Constructs the object.
+     *
+     * @param      name   The name
+     * @param      birth  The birth
+     * @param      m1     The m 1
+     * @param      m2     The m 2
+     * @param      m3     The m 3
+     * @param      full   The full
+     * @param      cat    The cat
+     */
+    Student(final String name, final String birth, final int m1,
+        final int m2, final int m3, final int full,
         final String cat) {
         this.studentName = name;
         this.dob = birth;
@@ -28,44 +66,108 @@ class Student implements Comparable<Student> {
         this.total = full;
         this.category = cat;
     }
+    /**
+     * Gets the student name.
+     *
+     * @return     The student name.
+     */
     public String getStudentName() {
         return this.studentName;
     }
+    /**
+     * Gets the dob.
+     *
+     * @return     The dob.
+     */
     public String getDob() {
             return this.dob;
     }
-    public double getMarks1() {
+    /**
+     * Gets the marks 1.
+     *
+     * @return     The marks 1.
+     */
+    public int getMarks1() {
             return this.marks1;
     }
-    public double getMarks2() {
+    /**
+     * Gets the marks 2.
+     *
+     * @return     The marks 2.
+     */
+    public int getMarks2() {
         return this.marks2;
     }
-    public double getMarks3() {
+    /**
+     * Gets the marks 3.
+     *
+     * @return     The marks 3.
+     */
+    public int getMarks3() {
         return this.marks3;
     }
-    public double getTotal() {
+    /**
+     * Gets the total.
+     *
+     * @return     The total.
+     */
+    public int getTotal() {
         return this.total;
     }
+    /**
+     * Gets the category.
+     *
+     * @return     The category.
+     */
     public String getCategory() {
         return this.category;
     }
-    
+    /**
+     * Sets the student name.
+     *
+     * @param      s     { parameter_description }
+     */
     public void setStudentName(final String s) {
         this.studentName = s;
     }
+    /**
+     * Sets the dob.
+     *
+     * @param      d     { parameter_description }
+     */
     public void setDob(final String d) {
         this.dob = d;
     }
-    public void setMarks1(final double mm1) {
+    /**
+     * Sets the marks 1.
+     *
+     * @param      mm1   The millimeters 1
+     */
+    public void setMarks1(final int mm1) {
         this.marks1 = mm1;
     }
-    public void setMarks2(final double mm2) {
+    /**
+     * Sets the marks 2.
+     *
+     * @param      mm2   The millimeters 2
+     */
+    public void setMarks2(final int mm2) {
         this.marks2 = mm2;
     }
-    public void setMarks3(final double mm3) {
+    /**
+     * Sets the marks 3.
+     *
+     * @param      mm3   The millimeters 3
+     */
+    public void setMarks3(final int mm3) {
         this.marks3 = mm3;
     }
-    public void setTotal(final double t) {
+    /**
+     * Sets the total.
+     *
+     * @param      t     { parameter_description }
+     */
+    public void setTotal(final int t) {
         this.total = t;
     }
     /**
@@ -164,6 +266,7 @@ class SelectionSort {
             resize();
         }
         students[size++] = t;
+        // System.out.println(students);
     }
     /**
      * to sort the elements based on wins, losses, draws.
@@ -193,15 +296,6 @@ class SelectionSort {
         a[i] = a[j];
         a[j] = swap;
     }
-    // public void sort() {
-    //  int N = students.length;
-    //  for (int i = 0; i < N; i++)
-    //  for (int j = i; j > 0; j--)
-    //  if (less(students[j], students[j-1]))
-    //  exch(students, j, j-1);
-    //  else break;
-    // }
-
     /**
      * to display the data of class.
      * Time complexity is N.
@@ -209,9 +303,14 @@ class SelectionSort {
     public void display() {
         int i = 0;
         for (i = 0; i < size - 1; i++) {
-            System.out.print(students[i].getStudentName() + ",");
+            System.out.print(students[i].getStudentName() + ","
+                + students[i].getTotal() + "," + students[i].getCategory());
         }
-        System.out.println(students[i].getStudentName());
+        System.out.println();
+        // for (i = 0; i < size - 1; i++) {
+        //     System.out.print(students[i] + ",");
+        // }
+
     }
 }
 public final class Solution {
@@ -229,29 +328,22 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SelectionSort stu = new SelectionSort();
-        int n = Integer.parseInt(scan.nextLine());
-        // System.out.println(n);
-        int vacancies = scan.nextInt();
-        // System.out.println(vacancies);
-        int unreserved = scan.nextInt();
-        // System.out.println(unreserved);
-        int categoryBC = scan.nextInt();
-        // System.out.println(categoryBC);
-        int categorySC = scan.nextInt();
-        // System.out.println(categorySC);
-        int categoryST = scan.nextInt();
-        // System.out.println(categoryST);
         
-        while (scan.hasNext()) {
-            String[] tokens = scan.nextLine().split(", ");
+        
+        while (scan.hasNextLine()) {
+            String line = scan.nextLine();
+            int vacancies = scan.nextInt();
+            int unreserved = scan.nextInt();
+            int categoryBC = scan.nextInt();
+            int categorySC = scan.nextInt();
+            int categoryST = scan.nextInt();
+            String[] tokens = line.split(",");
             stu.add(new Student(tokens[0], tokens[1],
-                Double.parseDouble(tokens[2]), Double.parseDouble(tokens[3]),
-                Double.parseDouble(tokens[4]), Double.parseDouble(tokens[5]), tokens[6]));
-        //     final String name, final String birth, final double m1,
-        // final double m2, final double m3, final double full,
-        // final String cat
+                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]),
+                Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]));
+            // stu.add(tokens);
+            System.out.println(Arrays.toString(tokens));
         }
-        // System.out.println(Arrays.toString(tokens));
         stu.sort();
         stu.display();
     }
