@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:94:8: Unused @param tag for 'arrayay'. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:97:41: Expected @param tag for 'array'. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:150: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 4 errors.

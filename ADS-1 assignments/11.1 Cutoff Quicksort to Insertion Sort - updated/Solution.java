@@ -1,24 +1,20 @@
-/**.
- * { item_description }
- */
 import java.util.Scanner;
 /**
  * Class for sorting.
  */
 class Sorting {
-
     /**.
      * Constructs the object.
      */
     Sorting() {
         /**.
-         * { item_description }
+         * Empty Constructer.
          */
     }
-// time complexity for this method is O(N^2).
-// In first for loop and second loop it iterates through the size of arrayay
+    // time complexity for this method is O(N^2).
+    // In first for loop and second loop it iterates through the size of arrayay
     /**.
-     * { function_description }
+     * insertion sort.
      *
      * @param      array  The arguments
      * @param      low  The arguments
@@ -26,17 +22,15 @@ class Sorting {
      */
     public void insertion(final Comparable[] array, final int low,
      final int high) {
-        // int i = low;
-        // int j = high;
         for (int i = low; i <= high; i++) {
             for (int j = i; j > low && less(array[j], array[j - 1]); j--) {
                 swap(array, j, j - 1);
             }
         }
     }
-// time complexity of this method is O(1). It swaps the elements only once.
-/**.
-     * { function_description }
+    // time complexity of this method is O(1). It swaps the elements only once.
+    /**.
+     * to swap two numbers.
      *
      * @param      array  The arguments
      * @param      j  The arguments
@@ -47,8 +41,8 @@ class Sorting {
         array[j] = array[min];
         array[min] = temp;
     }
-// time complexity of this method is O(N). It iterates through
-// the arrayay to print all the objects in arrayay.
+    // time complexity of this method is O(N). It iterates through
+    // the arrayay to print all the objects in arrayay.
 
     /**.
      * Returns a string representation of the object.
@@ -67,7 +61,7 @@ class Sorting {
     }
     // time complexity is O(log N)
     /**.
-     * { function_description }
+     * to sort.
      *
      * @param      array  The arguments
      * @param      low  The arguments
@@ -89,18 +83,17 @@ class Sorting {
     //time complexity is O(1)
 
     /**.
-     * { function_description }
+     * to sort.
      *
-     * @param      arrayay   The arrayay
+     * @param      array   The arrayay
      * @param      cutOff  The cut off
      */
     public void sort(final Comparable[] array, final int cutOff) {
         sort(array, 0, array.length - 1, cutOff);
     }
-// time complexity is O(N)
-
+    // time complexity is O(N)
     /**.
-     * { function_description }
+     * for partitioning.
      *
      * @param      array   The array
      * @param      low   The low
@@ -129,13 +122,11 @@ class Sorting {
             swap(array, i, j);
         }
         swap(array, low, j);
-        // System.out.println(toString(array));
         return j;
     }
-// time complexity is O(1)
-
+    // time complexity is O(1)
     /**.
-     * { function_description }
+     * to compare.
      *
      * @param      a     { parameter_description }
      * @param      b     { parameter_description }
@@ -146,18 +137,20 @@ class Sorting {
         return a.compareTo(b) < 0;
     }
 }
-
+/**
+ * client class.
+ */
 public final class Solution {
     /**.
      * Constructs the object.
      */
     private Solution() {
         /**.
-         * { item_description }
+         * empty constructer.
          */
     }
     /**.
-     * { function_description }
+     * main function.
      *
      * @param      args  The arguments
      */
