@@ -31,8 +31,13 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:353)
+[23]
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:347)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -76,8 +81,13 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:353)
+[30]
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:347)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -96,8 +106,13 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:353)
+[10]
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:347)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -119,8 +134,13 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:353)
+[10]
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:347)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -169,8 +189,13 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:353)
+[30]
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:347)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -221,6 +246,11 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:353)
+[30]
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:347)
 ----------------------------------------

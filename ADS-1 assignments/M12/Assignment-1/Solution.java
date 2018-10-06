@@ -350,11 +350,11 @@ public final class Solution {
             int categorySC = scan.nextInt();
             int categoryST = scan.nextInt();
             String[] tokens = line.split(",");
-            stu.add(new Student(tokens[0], tokens[1],
-                Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
-                Integer.parseInt(tokens[2 + 2]),
-                Integer.parseInt(tokens[FIVE]), tokens[SIX]));
-            // stu.add(tokens);
+            // stu.add(new Student(tokens[0], tokens[1],
+            //     Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]),
+            //     Integer.parseInt(tokens[2 + 2]),
+            //     Integer.parseInt(tokens[FIVE]), tokens[SIX]));
+            stu.add(new Student());
             System.out.println(Arrays.toString(tokens));
         }
         stu.sort();
