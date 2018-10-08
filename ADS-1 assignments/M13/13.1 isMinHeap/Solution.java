@@ -11,6 +11,7 @@ class MinPQ<P extends Comparable<P>> {
     private P[] array;
     /**
      * Constructs the object.
+     * Time complexity is 1.
      *
      * @param      a     { parameter_description }
      */
@@ -19,6 +20,7 @@ class MinPQ<P extends Comparable<P>> {
     }
     /**
      * Determines if minimum heap.
+     * Time complexity is N.
      *
      * @return     True if minimum heap, False otherwise.
      */
@@ -33,6 +35,7 @@ class MinPQ<P extends Comparable<P>> {
     }
     /**
      * to compare two arrays.
+     * Time complexity is 1.
      *
      * @param      a     { parameter_description }
      * @param      b     { parameter_description }

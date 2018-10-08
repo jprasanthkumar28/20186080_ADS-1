@@ -1,0 +1,1 @@
+As the array is in sorted order and min at root, and both children are greater than or equal to the parent. This satisfies the min heap property.
