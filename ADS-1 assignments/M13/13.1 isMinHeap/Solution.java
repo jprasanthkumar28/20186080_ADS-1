@@ -5,6 +5,7 @@ class MinPQ<P extends Comparable<P>> {
         this.array = a;
     }
     public boolean isMinHeap() {
+        // System.out.println("123456");
         for (int i = 0; i < array.length - 1; i++) {
                 if (less(i + 1, i)) {
                     return false;

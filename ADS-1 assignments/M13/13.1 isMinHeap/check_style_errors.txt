@@ -1,15 +1,14 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:3:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:19: Class Solution should be declared as final. [FinalClass]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:19: Missing a Javadoc comment. [JavadocType]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:20:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:24:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:24:29: Parameter args should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:28: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:16:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:20: Class Solution should be declared as final. [FinalClass]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:20: Missing a Javadoc comment. [JavadocType]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:25:29: Parameter args should be final. [FinalParameters]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:29: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 11 errors.
