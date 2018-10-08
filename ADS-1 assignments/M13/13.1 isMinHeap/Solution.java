@@ -1,9 +1,19 @@
 import java.util.Scanner;
+/**
+ * Class for minimum pq.
+ *
+ * @param      <P>   { parameter_description }
+ */
 class MinPQ<P extends Comparable<P>> {
     private P[] array;
     MinPQ(final P[] a) {
         this.array = a;
     }
+    /**
+     * Determines if minimum heap.
+     *
+     * @return     True if minimum heap, False otherwise.
+     */
     public boolean isMinHeap() {
         // System.out.println("123456");
         for (int i = 0; i < array.length - 1; i++) {
@@ -13,16 +23,32 @@ class MinPQ<P extends Comparable<P>> {
             }
         return true;
     }
+    /**
+     * to compare two arrays.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     *
+     * @return     true if lessthan 0 or else false.
+     */
     public boolean less(final int a, final int b) {
         return array[a].compareTo(array[b]) < 0;
     }
 }
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
     private Solution() {
         //Unused Constructor.
     }
 
-    public static void main(String[] args) {
+    /**
+     * Client function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
         int data = Integer.parseInt(scan.nextLine());
