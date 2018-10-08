@@ -64,7 +64,12 @@ public class Solution {
             break;
         case "Float":
             while (data > 0) {
-                String[] tokens = scan.nextLine().split(",");
+                String s = scan.nextLine();
+                if (s.equals("")) {
+                    System.out.println("false");
+                    break;
+                } else {
+                String[] tokens = s.split(",");
                 Float[] floatTokens = new Float[tokens.length];
                 for (int l = 0; l < tokens.length; l++) {
                     floatTokens[l] = Float.parseFloat(tokens[l]);
@@ -74,6 +79,7 @@ public class Solution {
                 data--;
             }
             break;
+        }
         }
     }
 }
