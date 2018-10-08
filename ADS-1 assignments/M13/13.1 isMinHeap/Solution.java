@@ -90,7 +90,6 @@ public final class Solution {
                 String s = scan.nextLine();
                 if (s.equals("")) {
                     System.out.println("false");
-                    break;
                 } else {
                     String[] tokens = s.split(",");
                     Float[] floatTokens = new Float[tokens.length];
