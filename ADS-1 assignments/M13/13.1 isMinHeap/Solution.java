@@ -5,15 +5,11 @@ class MinPQ<P extends Comparable<P>> {
         this.array = a;
     }
     public boolean isMinHeap() {
-        if (array.length == 0) {
-            return false;
-        } else {
-            for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
                 if (less(i + 1, i)) {
                     return false;
                 }
             }
-        }
         return true;
     }
     public boolean less(final int a, final int b) {
