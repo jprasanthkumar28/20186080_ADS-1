@@ -5,7 +5,15 @@ import java.util.Scanner;
  * @param      <P>   { parameter_description }
  */
 class MinPQ<P extends Comparable<P>> {
+    /**
+     * an array of P.
+     */
     private P[] array;
+    /**
+     * Constructs the object.
+     *
+     * @param      a     { parameter_description }
+     */
     MinPQ(final P[] a) {
         this.array = a;
     }
@@ -39,6 +47,9 @@ class MinPQ<P extends Comparable<P>> {
  * Class for solution.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Unused Constructor.
     }
@@ -102,6 +113,8 @@ public final class Solution {
                     data--;
                 }
             break;
+        default:
+        break;
         }
     }
 }

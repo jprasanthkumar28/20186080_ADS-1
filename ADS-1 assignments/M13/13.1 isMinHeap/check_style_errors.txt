@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:9:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:55: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 4 errors.
