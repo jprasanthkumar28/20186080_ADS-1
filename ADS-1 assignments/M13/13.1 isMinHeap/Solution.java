@@ -87,21 +87,21 @@ public final class Solution {
             break;
         case "Float":
             while (data > 0) {
-                String s = scan.nextLine();
-                if (s.equals("")) {
-                    System.out.println("false");
-                } else {
-                    String[] tokens = s.split(",");
-                    Float[] floatTokens = new Float[tokens.length];
-                    for (int l = 0; l < tokens.length; l++) {
-                        floatTokens[l] = Float.parseFloat(tokens[l]);
+                    String s = scan.nextLine();
+                    if (s.equals("")) {
+                        System.out.println("false");
+                    } else {
+                        String[] tokens = s.split(",");
+                        Float[] floatTokens = new Float[tokens.length];
+                        for (int l = 0; l < tokens.length; l++) {
+                            floatTokens[l] = Float.parseFloat(tokens[l]);
+                        }
+                        MinPQ<Float> min = new MinPQ<Float>(floatTokens);
+                        System.out.println(min.isMinHeap());
                     }
-                    MinPQ<Float> min = new MinPQ<Float>(floatTokens);
-                    System.out.println(min.isMinHeap());
+                    data--;
                 }
-                data--;
             break;
-        }
         }
     }
 }
