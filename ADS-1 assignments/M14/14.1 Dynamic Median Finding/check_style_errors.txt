@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:10:22: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.

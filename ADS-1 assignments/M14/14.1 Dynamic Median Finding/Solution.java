@@ -7,19 +7,22 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution () {
+    private Solution() {
     /**
      * Empty Constructer.
      */
     }
 
+    /**
+     * client function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-
         MinPQ<Float> minPQ = new MinPQ<Float>(n);
         MaxPQ<Float> maxPQ = new MaxPQ<Float>(n);
-
         Float median = 0.0f;
         for (int i = 0; i < n; i++) {
             Float value = scan.nextFloat();
@@ -35,7 +38,6 @@ public final class Solution {
             }
             if (maxPQ.size() - minPQ.size() > 1) {
                 minPQ.insert(maxPQ.delMax());
-                
             }
 
             if (minPQ.size() == maxPQ.size()) {
