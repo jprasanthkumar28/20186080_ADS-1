@@ -26,19 +26,6 @@ Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:410: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:425:53: Parameter k should be final. [FinalParameters]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:428: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:429: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:446: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:447:20: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:447:21: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:447:38: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:447:39: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:459:27: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:459:28: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:460:13: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:460:14: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:460:23: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:460:24: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:461:13: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:461:14: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:428:51: Avoid nested blocks. [AvoidNestedBlocks]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 28 errors.

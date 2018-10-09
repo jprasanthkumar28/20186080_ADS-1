@@ -425,11 +425,13 @@ class Heap {
     private static void sink(final Comparable[] pq, int k, final int n) {
         while (2 * k <= n) {
             int j = 2 * k;
-            if (j < n && less(pq, j, j + 1)) j++;
-            if (!less(pq, k, j))
+            if (j < n && less(pq, j, j + 1)) j++; {
+            if (!less(pq, k, j)) {
                 break;
+            }
             exch(pq, k, j);
             k = j;
+            }
         }
     }
 
@@ -443,8 +445,9 @@ class Heap {
      *
      * @return     { description_of_the_return_value }
      */
-    private static boolean less(final Comparable[] pq, final int i, final int j) {
-        return pq[i-1].compareTo(pq[j-1]) < 0;
+    private static boolean less(final Comparable[] pq, final int i,
+        final int j) {
+        return pq[i - 1].compareTo(pq[j - 1]) < 0;
     }
 
     /**
@@ -456,9 +459,9 @@ class Heap {
      * @param      j     { parameter_description }
      */
     private static void exch(final Object[] pq, final int i, final int j) {
-        Object swap = pq[i-1];
-        pq[i-1] = pq[j-1];
-        pq[j-1] = swap;
+        Object swap = pq[i - 1];
+        pq[i - 1] = pq[j - 1];
+        pq[j - 1] = swap;
     }
 
     /**
