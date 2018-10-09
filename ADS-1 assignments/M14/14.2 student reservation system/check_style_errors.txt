@@ -7,8 +7,10 @@ Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:95:49: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:105:49: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:115:49: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:125: Line has trailing spaces. [RegexpSingleline]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:126:45: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:254:8: Unused @param tag for 'tm'. [JavadocMethod]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:255:8: Unused @param tag for 'rc'. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:429:53: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 13 errors.
