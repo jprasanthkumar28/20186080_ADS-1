@@ -168,10 +168,8 @@ Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:467: Line has trailing spaces. [RegexpSingleline]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:469:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:470: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:478: Class Solution should be declared as final. [FinalClass]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:483:22: '(' is preceded with whitespace. [MethodParamPad]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:489:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:489:29: Parameter args should be final. [FinalParameters]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:511: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 174 errors.
+Checkstyle ends with 172 errors.
