@@ -212,7 +212,7 @@ class Student implements Comparable<Student> {
      * @return     the student's date of birth.
      */
     public String getRc() {
-        return this.rc;
+        return rc;
     }
 
     /**
