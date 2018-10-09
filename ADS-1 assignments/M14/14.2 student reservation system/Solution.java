@@ -122,7 +122,7 @@ public final class Solution {
         }
 
         for (i = 0; i < n; i++) {
-            if (vacancies > 0 && students[i].getRc().equals("Open") 
+            if (vacancies > 0 && students[i].getRc().equals("Open")
                 && students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
@@ -212,7 +212,7 @@ class Student implements Comparable<Student> {
      * @return     the student's date of birth.
      */
     public String getRc() {
-        return rc;
+        return this.rc;
     }
 
     /**
@@ -426,16 +426,18 @@ final class Heap {
      * @param      k     { parameter_description }
      * @param      n     { parameter_description }
      */
-    private static void sink(final Comparable[] pq, int k, final int n) {
+    private static void sink(final Comparable[] pq, final int k, final int n) {
         while (2 * k <= n) {
-            int j = 2 * k;
-            if (j < n && less(pq, j, j + 1)) j++; {
-                if (!less(pq, k, j)) {
-                    break;
-                }
-            exch(pq, k, j);
-            k = j;
+            int l = k;
+            int j = 2 * l;
+            if (j < n && less(pq, j, j + 1)) {
+                j++;
             }
+            if (!less(pq, l, j)) {
+                break;
+            }
+            exch(pq, l, j);
+            l = j;
         }
     }
 
