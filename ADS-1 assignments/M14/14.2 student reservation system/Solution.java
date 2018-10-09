@@ -91,8 +91,8 @@ public final class Solution {
             }
 
             if (noBC > 0) {
-                if (students[i].getRc().equals("BC") &&
-                        students[i].getAlloted() != true) {
+                if (students[i].getRc().equals("BC")
+                    && students[i].getAlloted() != true) {
                     noBC--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -111,8 +111,8 @@ public final class Solution {
             }
 
             if (noSC > 0) {
-                if (students[i].getRc().equals("ST") &&
-                        students[i].getAlloted() != true) {
+                if (students[i].getRc().equals("ST")
+                    && students[i].getAlloted() != true) {
                     noST--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -122,8 +122,8 @@ public final class Solution {
         }
 
         for (i = 0; i < n; i++) {
-            if (vacancies > 0 && students[i].getRc().equals("Open") &&
-                    students[i].getAlloted() == false) {
+            if (vacancies > 0 && students[i].getRc().equals("Open") 
+                && students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
                 vacancies--;
@@ -170,11 +170,10 @@ class Student implements Comparable<Student> {
      * Seats allocated variable.
      */
     private boolean alloted;
-    
     /**
      * returns true, if the student is already alloted,
      * otherwise false.
-     * 
+     *
      * @return true if alloted, otherwise false.
      */
     public boolean getAlloted() {
@@ -253,9 +252,9 @@ class Student implements Comparable<Student> {
      * @param      tm           Total Marks.
      * @param      rc           Reservation Category.
      */
-    Student(String studentName, String dateOfBirth,
-                   int m1, int m2, int m3, int tm,
-                   String rc) {
+    Student(final String studentName, final String dateOfBirth,
+                   final int mm1, final int mm2, final int mm3, final int total,
+                   final String res) {
         this.studentName = studentName;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
@@ -264,11 +263,11 @@ class Student implements Comparable<Student> {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        this.m1 = m1;
-        this.m2 = m2;
-        this.m3 = m3;
-        this.tm = tm;
-        this.rc = rc;
+        this.m1 = mm1;
+        this.m2 = mm2;
+        this.m3 = mm3;
+        this.tm = total;
+        this.rc = res;
         this.alloted = false;
     }
 
@@ -387,9 +386,18 @@ class Student implements Comparable<Student> {
     }
 }
 
+/**
+ * Class for heap.
+ */
 class Heap {
-
-    private Heap() { }
+    /**
+     * Constructs the object.
+     */
+    private Heap() {
+    /**
+     * empty constructer.
+     */
+    }
 
     /**
      * Rearranges the array in ascending order, using the natural order.
@@ -399,7 +407,7 @@ class Heap {
      */
     public static void sort(final Comparable[] pq) {
         int n = pq.length;
-        for (int k = n/2; k >= 1; k--)
+        for (int k = n / 2; k >= 1; k--)
             sink(pq, k, n);
         while (n > 1) {
             exch(pq, 1, n--);
@@ -415,10 +423,11 @@ class Heap {
      * @param      n     { parameter_description }
      */
     private static void sink(final Comparable[] pq, int k, final int n) {
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && less(pq, j, j+1)) j++;
-            if (!less(pq, k, j)) break;
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && less(pq, j, j + 1)) j++;
+            if (!less(pq, k, j))
+                break;
             exch(pq, k, j);
             k = j;
         }
