@@ -101,8 +101,8 @@ public final class Solution {
             }
 
             if (noSC > 0) {
-                if (students[i].getRc().equals("SC") &&
-                        students[i].getAlloted() != true) {
+                if (students[i].getRc().equals("SC")
+                    && students[i].getAlloted() != true) {
                     noSC--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -244,18 +244,20 @@ class Student implements Comparable<Student> {
     /**
      * Constructs the object based on the parameters.
      *
-     * @param      studentName  Student Name
+     * @param      stuName      Student Name
      * @param      dateOfBirth  Date of Birth
-     * @param      m1           Marks in first subject.
-     * @param      m2           Marks in second subject.
-     * @param      m3           Marks in third subject.
-     * @param      tm           Total Marks.
-     * @param      rc           Reservation Category.
+     * @param      mm1          Marks in first subject.
+     * @param      mm2          Marks in second subject.
+     * @param      mm3          Marks in third subject.
+     * @param      total        The total
+     * @param      res          The resource
+     * @param      tm    Total Marks.
+     * @param      rc    Reservation Category.
      */
-    Student(final String studentName, final String dateOfBirth,
+    Student(final String stuName, final String dateOfBirth,
                    final int mm1, final int mm2, final int mm3, final int total,
                    final String res) {
-        this.studentName = studentName;
+        this.studentName = stuName;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         try {
@@ -334,7 +336,8 @@ class Student implements Comparable<Student> {
 
     /**
      * When required the student's name can be updated.
-     * @param student.
+     *
+     * @param      student  The student
      */
     public void setStudentName(final String student) {
         this.studentName = student;
@@ -389,7 +392,7 @@ class Student implements Comparable<Student> {
 /**
  * Class for heap.
  */
-class Heap {
+final class Heap {
     /**
      * Constructs the object.
      */
@@ -407,8 +410,9 @@ class Heap {
      */
     public static void sort(final Comparable[] pq) {
         int n = pq.length;
-        for (int k = n / 2; k >= 1; k--)
+        for (int k = n / 2; k >= 1; k--) {
             sink(pq, k, n);
+        }
         while (n > 1) {
             exch(pq, 1, n--);
             sink(pq, 1, n);
@@ -426,9 +430,9 @@ class Heap {
         while (2 * k <= n) {
             int j = 2 * k;
             if (j < n && less(pq, j, j + 1)) j++; {
-            if (!less(pq, k, j)) {
-                break;
-            }
+                if (!less(pq, k, j)) {
+                    break;
+                }
             exch(pq, k, j);
             k = j;
             }
