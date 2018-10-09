@@ -68,65 +68,70 @@ public final class Solution {
      * @param noST      Number of ST seats.
      */
     public static void allotment(final Student[] students,
-                                 int vacancies,
-                                 int noCategry,
-                                 int noBC,
-                                 int noSC,
-                                 int noST) {
+                                final int vacancies,
+                                final int noCategry,
+                                final int noBC,
+                                final int noSC,
+                                final int noST) {
+        int v = vacancies;
+        int n1 = noCategry;
+        int nb = noBC;
+        int ns = noSC;
+        int nt = noST;
         int i = 0;
         int k = 0;
         int n = students.length;
-        Student[] alloted = new Student[vacancies];
+        Student[] alloted = new Student[v];
 
         for (i = 0; i < n; i++) {
-            if (vacancies == 0) {
+            if (v == 0) {
                 break;
             }
 
-            if (noCategry > 0) {
-                noCategry--;
+            if (n1 > 0) {
+                n1--;
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
-                vacancies--;
+                v--;
             }
 
-            if (noBC > 0) {
+            if (nb > 0) {
                 if (students[i].getRc().equals("BC")
                     && students[i].getAlloted() != true) {
-                    noBC--;
+                    nb--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
-                    vacancies--;
+                    v--;
                 }
             }
 
-            if (noSC > 0) {
+            if (ns > 0) {
                 if (students[i].getRc().equals("SC")
                     && students[i].getAlloted() != true) {
-                    noSC--;
+                    ns--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
-                    vacancies--;
+                    v--;
                 }
             }
 
-            if (noSC > 0) {
+            if (ns > 0) {
                 if (students[i].getRc().equals("ST")
                     && students[i].getAlloted() != true) {
-                    noST--;
+                    nt--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
-                    vacancies--;
+                    v--;
                 }
             }
         }
 
         for (i = 0; i < n; i++) {
-            if (vacancies > 0 && students[i].getRc().equals("Open") 
+            if (v > 0 && students[i].getRc().equals("Open")
                 && students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
-                vacancies--;
+                v--;
             }
         }
 
@@ -251,8 +256,8 @@ class Student implements Comparable<Student> {
      * @param      mm3          Marks in third subject.
      * @param      total        The total
      * @param      res          The resource
-     * @param      tm    Total Marks.
-     * @param      rc    Reservation Category.
+     * @param      total   Total Marks.
+     * @param      res    Reservation Category.
      */
     Student(final String stuName, final String dateOfBirth,
                    final int mm1, final int mm2, final int mm3, final int total,
