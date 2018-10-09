@@ -95,10 +95,9 @@ public final class Solution {
                 v--;
             }
 
-            if (nb > 0) {
-                boolean r = students[i].getAlloted();
-                if (students[i].getRc().equals("BC")
-                    && (r != true)) {
+            if (nb >  0) {
+                if (students[i].getRc().equals("BC") != true)
+                    if (students[i].getAlloted() != true) {
                     nb--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
