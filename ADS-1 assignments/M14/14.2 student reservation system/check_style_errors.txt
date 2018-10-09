@@ -3,8 +3,6 @@ Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:110:49: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:120:49: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:131:45: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:259:8: Unused @param tag for 'total'. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:260:8: Unused @param tag for 'res'. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:434:53: Parameter k should be final. [FinalParameters]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:432:53: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.

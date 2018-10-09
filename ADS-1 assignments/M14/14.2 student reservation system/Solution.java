@@ -256,8 +256,6 @@ class Student implements Comparable<Student> {
      * @param      mm3          Marks in third subject.
      * @param      total        The total
      * @param      res          The resource
-     * @param      total   Total Marks.
-     * @param      res    Reservation Category.
      */
     Student(final String stuName, final String dateOfBirth,
                    final int mm1, final int mm2, final int mm3, final int total,
@@ -432,16 +430,17 @@ final class Heap {
      * @param      n     { parameter_description }
      */
     private static void sink(final Comparable[] pq, int k, final int n) {
-        while (2 * k <= n) {
-            int j = 2 * k;
+        int l = k;
+        while (2 * l <= n) {
+            int j = 2 * l;
             if (j < n && less(pq, j, j + 1)) {
                 j++;
             }
-            if (!less(pq, k, j)) {
+            if (!less(pq, l, j)) {
                 break;
             }
-            exch(pq, k, j);
-            k = j;
+            exch(pq, l, j);
+            l = j;
         }
     }
 
