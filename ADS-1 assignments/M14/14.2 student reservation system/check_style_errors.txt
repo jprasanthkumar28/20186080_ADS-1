@@ -1,7 +1,6 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:100:49: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:110:49: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:120:49: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:131:45: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:109:49: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:119:49: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:130:45: Expression can be simplified. [SimplifyBooleanExpression]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.
