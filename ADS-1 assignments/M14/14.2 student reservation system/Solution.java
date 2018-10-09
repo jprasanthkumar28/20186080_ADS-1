@@ -48,7 +48,8 @@ public final class Solution {
 
     /**
      * prints the student details to the console.
-     * @param students list.
+     *
+     * @param      students  list.
      */
     public static void print(final Student[] students) {
         for (Student student : students) {
@@ -137,13 +138,37 @@ public final class Solution {
  * Class for student.
  */
 class Student implements Comparable<Student> {
+    /**
+     * student name variable.
+     */
     private String studentName;
+    /**
+     * date variable.
+     */
     private Date db;
+    /**
+     * for marks1 variable.
+     */
     private int m1;
+    /**
+     * for marks2 variable.
+     */
     private int m2;
+    /**
+     * for mark3 variable.
+     */
     private int m3;
+    /**
+     * for total marks variable.
+     */
     private int tm;
+    /**
+     * for reservation variable.
+     */
     private String rc;
+    /**
+     * Seats allocated variable.
+     */
     private boolean alloted;
     
     /**
@@ -368,9 +393,11 @@ class Heap {
 
     /**
      * Rearranges the array in ascending order, using the natural order.
-     * @param pq the array to be sorted
+     * Time complexity is N log N.
+     *
+     * @param      pq    the array to be sorted
      */
-    public static void sort(Comparable[] pq) {
+    public static void sort(final Comparable[] pq) {
         int n = pq.length;
         for (int k = n/2; k >= 1; k--)
             sink(pq, k, n);
@@ -379,7 +406,15 @@ class Heap {
             sink(pq, 1, n);
         }
     }
-    private static void sink(Comparable[] pq, int k, int n) {
+    /**
+     * to sink the values.
+     * Time complexity is log N.
+     *
+     * @param      pq    { parameter_description }
+     * @param      k     { parameter_description }
+     * @param      n     { parameter_description }
+     */
+    private static void sink(final Comparable[] pq, int k, final int n) {
         while (2*k <= n) {
             int j = 2*k;
             if (j < n && less(pq, j, j+1)) j++;
@@ -389,17 +424,41 @@ class Heap {
         }
     }
 
-    private static boolean less(Comparable[] pq, int i, int j) {
+    /**
+     * to compare the values.
+     * Time complexity is 1.
+     *
+     * @param      pq    { parameter_description }
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private static boolean less(final Comparable[] pq, final int i, final int j) {
         return pq[i-1].compareTo(pq[j-1]) < 0;
     }
 
-    private static void exch(Object[] pq, int i, int j) {
+    /**
+     * to exchange the values.
+     * Time complexity is N.
+     *
+     * @param      pq    { parameter_description }
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
+    private static void exch(final Object[] pq, final int i, final int j) {
         Object swap = pq[i-1];
         pq[i-1] = pq[j-1];
         pq[j-1] = swap;
     }
 
-    private static void show(Comparable[] a) {
+    /**
+     * to display the data.
+     * Time complexity is N.
+     *
+     * @param      a     { parameter_description }
+     */
+    private static void show(final Comparable[] a) {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
