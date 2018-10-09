@@ -97,7 +97,7 @@ public final class Solution {
 
             if (nb > 0) {
                 if (students[i].getRc().equals("BC")
-                    && students[i].getAlloted() != true) {
+                    && (students[i].getAlloted() != true)) {
                     nb--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -429,7 +429,7 @@ final class Heap {
      * @param      k     { parameter_description }
      * @param      n     { parameter_description }
      */
-    private static void sink(final Comparable[] pq, int k, final int n) {
+    private static void sink(final Comparable[] pq, final int k, final int n) {
         int l = k;
         while (2 * l <= n) {
             int j = 2 * l;
