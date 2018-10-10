@@ -23,9 +23,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * Initializes an empty symbol table with the specified initial capacity.
      * @param capacity the maximum capacity
      */
-    public BinarySearchST(final int capacity) { 
-        keys = (Key[]) new Comparable[capacity]; 
-        vals = (Value[]) new Object[capacity]; 
+    public BinarySearchST(final int capacity) {
+        keys = (Key[]) new Comparable[capacity];
+        vals = (Value[]) new Object[capacity];
     }   
 
     /**
@@ -102,7 +102,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             return vals[i];
         }
         return null;
-    } 
+    }
 
     /**
      * Returns the number of keys in this symbol table strictly less than {@code key}.
@@ -116,21 +116,21 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             throw new 
             IllegalArgumentException("argument to rank() is null");
         } 
-        int lo = 0, hi = n-1; 
+        int lo = 0, hi = n - 1;
         while (lo <= hi) { 
-            int mid = lo + (hi - lo) / 2; 
+            int mid = lo + (hi - lo) / 2;
             int cmp = key.compareTo(keys[mid]);
-            if      (cmp < 0) hi = mid - 1; 
-            else if (cmp > 0) lo = mid + 1; 
-            else return mid; 
-        } 
+            if      (cmp < 0) hi = mid - 1;
+            else if (cmp > 0) lo = mid + 1;
+            else return mid;
+        }
         return lo;
-    } 
+    }
 
 
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old 
+     * Inserts the specified key-value pair into the symbol table, overwriting the old
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
@@ -187,7 +187,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             IllegalArgumentException("argument to delete() is null");
         } 
         if (isEmpty()) {
-            return;   
+            return;
         }
 
         // compute rank
@@ -282,18 +282,18 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException
-            ("called select() with invalid argument: " + k);
+            throw new IllegalArgumentException(
+                "called select() with invalid argument: " + k);
         }
         return keys[k];
     }
 
     /**
-     * Returns the largest key in this symbol table 
+     * Returns the largest key in this symbol table
      * less than or equal to {@code key}.
      *
      * @param  key the key
-     * @return the largest key in this symbol table 
+     * @return the largest key in this symbol table
      * less than or equal to {@code key}
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -316,11 +316,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the smallest key in this symbol table greater 
+     * Returns the smallest key in this symbol table greater
      * than or equal to {@code key}.
      *
      * @param  key the key
-     * @return the smallest key in this symbol table greater 
+     * @return the smallest key in this symbol table greater
      * than or equal to {@code key}
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -332,8 +332,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         int i = rank(key);
         if (i == n) {
              return null;
-        }
-        else {
+        } else {
             return keys[i];
         }
     }
@@ -474,5 +473,4 @@ public final class Solution {
             }
         }
     }
-
 }
