@@ -313,6 +313,15 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             if (keys[i].compareTo(select(rank(keys[i]))) != 0) return false;
         return true;
     }
+    public String toString() {
+        String s = "";
+        int i = 0;
+        for (i = 0; i < size() - 1; i++) {
+            s += keys[i] + " " + vals[i] + "\n";
+        }
+        s += keys[i] + " " + vals[i];
+        return s;
+    }
 }
 /**
  * Class for solution.

@@ -136,11 +136,12 @@ Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:311: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:312: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:313: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:320:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:321:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:331:29: Parameter args should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:333: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:338:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:340:19: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:316:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:329:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:330:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:340:29: Parameter args should be final. [FinalParameters]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:342: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:347:14: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:349:19: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 143 errors.
+Checkstyle ends with 144 errors.

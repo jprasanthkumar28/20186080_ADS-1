@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 X
 R
@@ -19,10 +19,18 @@ X
 R
 1
 true
-BinarySearchST@3cb5cdba
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
 null
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Y
 O 10
@@ -41,7 +49,12 @@ false
 null
 Your Output: 
 Y
-BinarySearchST@3cb5cdba
+O 10
+Q 4
+S 7
+T 8
+U 5
+Y 3
 Y
 null
 Y
@@ -51,7 +64,7 @@ O
 false
 null
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 X
 E 10
@@ -75,7 +88,15 @@ true
 T
 Your Output: 
 X
-BinarySearchST@3cb5cdba
+E 10
+L 9
+M 7
+O 1
+P 8
+R 2
+S 0
+T 3
+X 5
 0
 0
 0
@@ -87,7 +108,7 @@ true
 5
 T
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 B 0
 C 10
@@ -108,14 +129,26 @@ true
 13
 P
 Your Output: 
-BinarySearchST@3cb5cdba
+B 0
+C 10
+E 18
+H 11
+I 1
+L 17
+M 15
+N 2
+P 16
+R 9
+S 6
+X 13
+Y 5
 Y
 12
 true
 13
 P
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 M
 null
@@ -136,5 +169,12 @@ null
 Y
 7
 true
-BinarySearchST@3cb5cdba
+B 8
+E 10
+L 9
+M 2
+O 4
+S 0
+T 6
+Y 1
 ----------------------------------------
