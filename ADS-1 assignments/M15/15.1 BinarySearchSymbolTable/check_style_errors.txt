@@ -64,10 +64,9 @@ Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:331:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:342: Line has trailing spaces. [RegexpSingleline]
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:349: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:351:9: '}' at column 9 should be alone on a line. [RightCurly]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:352: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:354:9: '}' at column 9 should be alone on a line. [RightCurly]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:356:9: '}' at column 9 should be alone on a line. [RightCurly]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:358:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:351: Line has trailing spaces. [RegexpSingleline]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:353: Line has trailing spaces. [RegexpSingleline]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:354: Line has trailing spaces. [RegexpSingleline]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:355: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 70 errors.
+Checkstyle ends with 69 errors.

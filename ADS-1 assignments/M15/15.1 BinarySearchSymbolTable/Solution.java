@@ -348,15 +348,17 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (lo == null) {
             throw new 
             IllegalArgumentException("first argument to size() is null");
-        } if (hi == null) {
+        } 
+        if (hi == null) {
             throw new 
-            IllegalArgumentException("second argument to size() is null");
-        } if (lo.compareTo(hi) > 0) {
+            IllegalArgumentException("second argument to size() is null");  
+        }  
+        if (lo.compareTo(hi) > 0) {
             return 0;
-        } if (contains(hi)) {
-            return rank(hi) - rank(lo) + 1;
         }
-        else {
+        if (contains(hi)) {
+            return rank(hi) - rank(lo) + 1;
+        } else {
             return rank(hi) - rank(lo);
         }
     }
