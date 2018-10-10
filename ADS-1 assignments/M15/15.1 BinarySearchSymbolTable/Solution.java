@@ -240,9 +240,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
 
-   /***************************************************************************
+   /************************************************************************
     *  Ordered symbol table methods.
-    ***************************************************************************/
+    ************************************************************************
 
    /**
      * Returns the smallest key in this symbol table.
@@ -255,7 +255,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             throw new
             NoSuchElementException("called min() with empty symbol table");
         }
-        return keys[0]; 
+        return keys[0];
     }
 
     /**
@@ -289,10 +289,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the largest key in this symbol table less than or equal to {@code key}.
+     * Returns the largest key in this symbol table 
+     * less than or equal to {@code key}.
      *
      * @param  key the key
-     * @return the largest key in this symbol table less than or equal to {@code key}
+     * @return the largest key in this symbol table 
+     * less than or equal to {@code key}
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -309,26 +311,28 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             return null;
         }
         else {
-            return keys[i-1];
+            return keys[i - 1];
         }
     }
 
     /**
-     * Returns the smallest key in this symbol table greater than or equal to {@code key}.
+     * Returns the smallest key in this symbol table greater 
+     * than or equal to {@code key}.
      *
      * @param  key the key
-     * @return the smallest key in this symbol table greater than or equal to {@code key}
+     * @return the smallest key in this symbol table greater 
+     * than or equal to {@code key}
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Key ceiling(final Key key) {
         if (key == null) {
          throw new IllegalArgumentException("argument to ceiling() is null");
-        }  
+        }
         int i = rank(key);
         if (i == n) {
-             return null;   
-        } 
+             return null;
+        }
         else {
             return keys[i];
         }
@@ -339,20 +343,20 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      *
      * @param lo minimum endpoint
      * @param hi maximum endpoint
-     * @return the number of keys in this symbol table between {@code lo} 
+     * @return the number of keys in this symbol table between {@code lo}
      *         (inclusive) and {@code hi} (inclusive)
      * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *         is {@code null}
      */
     public int size(final Key lo, final Key hi) {
         if (lo == null) {
-            throw new 
+            throw new
             IllegalArgumentException("first argument to size() is null");
-        } 
+        }
         if (hi == null) {
-            throw new 
-            IllegalArgumentException("second argument to size() is null");  
-        }  
+            throw new
+            IllegalArgumentException("second argument to size() is null");
+        }
         if (lo.compareTo(hi) > 0) {
             return 0;
         }
