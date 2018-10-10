@@ -20,7 +20,7 @@ R
 1
 true
 BinarySearchST@3cb5cdba
-12
+null
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -84,7 +84,7 @@ BinarySearchST@3cb5cdba
 9
 9
 true
-1
+5
 T
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -112,7 +112,7 @@ BinarySearchST@3cb5cdba
 Y
 12
 true
-1
+13
 P
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -132,7 +132,7 @@ T 6
 Y 1
 Your Output: 
 M
-1
+null
 Y
 7
 true

@@ -357,7 +357,7 @@ public class Solution {
                     System.out.println(binary);
                     break;
                 case "get":
-                    System.out.println(binary.get(tokens[1]));
+                    System.out.println(binary.get(check[1]));
                     break;
                 default:
                     break;
