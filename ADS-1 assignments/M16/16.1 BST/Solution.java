@@ -121,11 +121,9 @@ class BinaryTree {
             int compare = key.getName().compareTo(a.mainKey.getName());
             if (compare < 0) {
                 a = a.left;
-            }
-            else if (compare > 0) {
+            } else if (compare > 0) {
                 a = a.right;
-            } 
-            else if (compare == 0) {
+            } else if (compare == 0) {
                 return a.value;
             }
         }
@@ -136,6 +134,11 @@ class BinaryTree {
  * Client class.
  */
 public final class Solution {
+	protected Solution() {
+	/**
+	 * Empty Constructer.
+	 */
+	}
 	/**
 	 * Cleint function.
 	 *
@@ -148,11 +151,11 @@ public final class Solution {
 			String[] tokens = scan.nextLine().split(",");
 			switch (tokens[0]) {
 				case "put":
-				Book book = new Book(tokens[1], tokens[2], tokens[3]);
-				bt.put(book, tokens[4]);
+				Book book = new Book(tokens[1], tokens[2], tokens[2 + 2]);
+				bt.put(book, tokens[2 + 2]);
 				break;
 				case "get":
-				book = new Book(tokens[1], tokens[2], tokens[3]);
+				book = new Book(tokens[1], tokens[2], tokens[2 + 1]);
 				System.out.println(bt.get(book));
 				break;
 				default:
