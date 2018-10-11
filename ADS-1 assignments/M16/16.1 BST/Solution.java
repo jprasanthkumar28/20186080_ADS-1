@@ -111,6 +111,15 @@ class BinaryTree {
     public void put(final Book key, final String value) {
         root = put(root, key, value);
     }
+    /**
+     * to put the values.
+     *
+     * @param      a      { parameter_description }
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     the value.
+     */
     public Node put(final Node a, final Book key, final String value) {
         if (a == null) {
             return new Node(key, value);
@@ -152,6 +161,9 @@ class BinaryTree {
  * Client class.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     protected Solution() {
     /**
      * Empty Constructer.
