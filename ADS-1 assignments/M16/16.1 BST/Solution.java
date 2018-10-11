@@ -95,7 +95,7 @@ class BinaryTree {
          * Constructs the object.
          *
          * @param      key    The key
-         * @param      value  The value
+         * @param      value1  The value
          */
         Node(final Book key, final String value1) {
             this.mainKey = key;
