@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:85:14: Variable 'mainKey' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:93:14: Variable 'left' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:93:20: Variable 'right' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:100:43: 'value' hides a field. [HiddenField]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:111:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:98:12: Unused @param tag for 'value'. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:100:43: Expected @param tag for 'value1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.

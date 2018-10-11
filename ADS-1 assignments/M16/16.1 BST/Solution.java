@@ -82,7 +82,7 @@ class BinaryTree {
         /**
          * Book class object for key.
          */
-        Book mainKey;
+        private Book mainKey;
         /**
          * value variable.
          */
@@ -90,16 +90,16 @@ class BinaryTree {
         /**
          * for left and right value, Node object.
          */
-        Node left, right;
+        private Node left, right;
         /**
          * Constructs the object.
          *
          * @param      key    The key
          * @param      value  The value
          */
-        Node(final Book key, final String value) {
+        Node(final Book key, final String value1) {
             this.mainKey = key;
-            this.value = value;
+            this.value = value1;
         }
     }
     /**
@@ -108,6 +108,12 @@ class BinaryTree {
     BinaryTree() {
         root = null;
     }
+    /**
+     * to put the value.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
     public void put(final Book key, final String value) {
         root = put(root, key, value);
     }
