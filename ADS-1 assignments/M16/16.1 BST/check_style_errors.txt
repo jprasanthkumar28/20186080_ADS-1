@@ -1,20 +1,10 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:74:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:74:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:79:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:79:22: Variable 'mainKey' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:80:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:80:24: Variable 'value' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:81:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:81:22: Variable 'left' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:81:28: Variable 'right' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:82:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:82:51: 'value' hides a field. [HiddenField]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:93:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:96:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:137:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:154: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:158: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:85:14: Variable 'mainKey' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:93:14: Variable 'left' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:93:20: Variable 'right' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:100:43: 'value' hides a field. [HiddenField]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:111:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:114:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:155:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 7 errors.
