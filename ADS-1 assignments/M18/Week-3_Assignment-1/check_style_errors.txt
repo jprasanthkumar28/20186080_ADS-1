@@ -1,0 +1,12 @@
+Starting audit...
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:3: Class Solution should be declared as final. [FinalClass]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:23:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:44: Missing a Javadoc comment. [JavadocType]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M18\Week-3_Assignment-1\Solution.java:57:8: Unused @param tag for 'au'. [JavadocMethod]
+Audit done.
+Checkstyle ends with 9 errors.
