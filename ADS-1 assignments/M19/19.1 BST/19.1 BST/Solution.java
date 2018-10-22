@@ -400,6 +400,11 @@ public final class Solution {
     private Solution() {
         //unused constructor.
     }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         BinaryTree bst = new BinaryTree();

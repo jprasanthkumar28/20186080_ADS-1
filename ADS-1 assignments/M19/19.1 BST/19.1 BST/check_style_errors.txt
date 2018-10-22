@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M19\19.1 BST\19.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M19\19.1 BST\19.1 BST\Solution.java:403:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
