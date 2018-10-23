@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.NoSuchElementException;
 /**
  * Class for book.
  */
@@ -406,7 +405,7 @@ class BinaryTree {
             return size(x.left);
         }
     }
-     /**
+    /**
      * Removes the smallest key and associated value from the symbol table.
      *
      * @throws NoSuchElementException if the symbol table is empty
@@ -485,7 +484,8 @@ class BinaryTree {
         } 
         x.size = size(x.left) + size(x.right) + 1;
         return x;
-    } 
+    }
+
 }
 /**
  * Client class.
@@ -540,7 +540,6 @@ public final class Solution {
                 book = new Book(tokens[1],
                     tokens[2], Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bst.ceiling(book));
-                break;
             case "delete":
                 book = new Book(tokens[1],
                     tokens[2], Float.parseFloat(tokens[2 + 1]));
@@ -549,6 +548,7 @@ public final class Solution {
                 bst.deleteMax();
             case "deleteMin":
                 bst.deleteMin();
+                break;
             default:
                 break;
             }
