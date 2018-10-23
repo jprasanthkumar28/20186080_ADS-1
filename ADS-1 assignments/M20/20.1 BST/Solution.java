@@ -455,7 +455,7 @@ class BinaryTree {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(Book key) {
-        if (key == null) throw new IllegalArgumentException("calls delete() with a null key");
+        // if (key == null) throw new IllegalArgumentException("calls delete() with a null key");
         root = delete(root, key);
         // assert check();
     }
