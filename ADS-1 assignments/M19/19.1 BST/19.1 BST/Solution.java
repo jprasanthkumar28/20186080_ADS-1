@@ -149,6 +149,7 @@ class BinaryTree {
     }
     /**
      * to get the key.
+     * time complexity is O(logN)
      *
      * @param      key   The key
      *
@@ -170,6 +171,7 @@ class BinaryTree {
     }
     /**
      * put function.
+     * time complexity is O(1)
      *
      * @param      key   The key
      * @param      val   The value
@@ -179,6 +181,7 @@ class BinaryTree {
     }
     /**
      * put function.
+     * time complexity is O(logN)
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -202,6 +205,7 @@ class BinaryTree {
     }
     /**
      * min function.
+     * time complexity is O(1)
      *
      * @return     min roots key.
      */
@@ -210,6 +214,7 @@ class BinaryTree {
     }
     /**
      * min function.
+     * time complexity is O(logN)
      *
      * @param      x     { parameter_description }
      *
@@ -224,6 +229,7 @@ class BinaryTree {
     }
     /**
      * max function.
+     * time complexity is O(1)
      *
      * @return     max value.
      */
@@ -232,6 +238,7 @@ class BinaryTree {
     }
     /**
      * max value.
+     * time complexity is O(logN)
      *
      * @param      x     { parameter_description }
      *
@@ -246,6 +253,7 @@ class BinaryTree {
     }
     /**
      * to get floor value.
+     * time complexity is O(1)
      *
      * @param      key   The key
      *
@@ -261,6 +269,7 @@ class BinaryTree {
     }
     /**
      * floor function.
+     * time complexity is O(logN)
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -287,6 +296,8 @@ class BinaryTree {
     }
     /**
      * ceiling function.
+     * time complexity is O(1)
+     * 
      *
      * @param      key   The key
      *
@@ -302,6 +313,7 @@ class BinaryTree {
     }
     /**
      * ceiling function.
+     * time complexity is O(logN)
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -328,6 +340,7 @@ class BinaryTree {
     }
     /**
      * select function.
+     * Time complexity of this method is O(1).
      *
      * @param      k     { parameter_description }
      *
@@ -339,6 +352,7 @@ class BinaryTree {
     }
     /**
      * select function.
+     * Time complexity of this method is O(log(N)).
      *
      * @param      x     { parameter_description }
      * @param      k     { parameter_description }
@@ -360,6 +374,7 @@ class BinaryTree {
     }
     /**
      * rank function.
+     * Time complexity of this method is O(1).
      *
      * @param      key   The key
      *
@@ -370,6 +385,7 @@ class BinaryTree {
     }
     /**
      * rank function.
+     * Time complexity of this method is O(log(N)).
      *
      * @param      key   The key
      * @param      x     { parameter_description }
