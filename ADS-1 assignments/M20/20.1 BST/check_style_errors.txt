@@ -1,26 +1,4 @@
 Starting audit...
 [ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:300: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:414: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:419:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:419:28: Parameter x should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:420: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:432: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:444:28: Parameter x should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:445: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:451: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:451: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:452: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:457:24: Parameter key should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:458: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:463: First sentence should end with a period. [JavadocStyle]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:471:25: Parameter x should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:471:33: Parameter key should be final. [FinalParameters]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:472: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:475: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:476: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:477: Line has trailing spaces. [RegexpSingleline]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:478: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:479: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:484: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 1 errors.

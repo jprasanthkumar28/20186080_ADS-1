@@ -15,7 +15,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at BinaryTree$Node.access$200(Solution.java:86)
 	at BinaryTree.min(Solution.java:224)
 	at BinaryTree.min(Solution.java:213)
-	at Solution.main(Solution.java:529)
+	at Solution.main(Solution.java:539)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -40,9 +40,9 @@ null
 null
 Exception in thread "main" java.lang.NullPointerException
 	at BinaryTree$Node.access$300(Solution.java:86)
-	at BinaryTree.deleteMax(Solution.java:445)
-	at BinaryTree.deleteMax(Solution.java:433)
-	at Solution.main(Solution.java:548)
+	at BinaryTree.deleteMax(Solution.java:447)
+	at BinaryTree.deleteMax(Solution.java:436)
+	at Solution.main(Solution.java:558)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 

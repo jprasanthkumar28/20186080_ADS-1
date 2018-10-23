@@ -405,87 +405,97 @@ class BinaryTree {
             return size(x.left);
         }
     }
-    /**
-     * Removes the smallest key and associated value from the symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
+/**
+     * deleteing minimum element.
+     * Time complexity is 1.
      */
     public void deleteMin() {
-        // if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
         root = deleteMin(root);
-        // assert check();
     }
-
-    private Node deleteMin(Node x) {
-        if (x.left == null) return x.right;
+    /**
+     * deleting minimum element with node value.
+     * Time complexity is logN.
+     *
+     * @param      x     Node variable.
+     *
+     * @return     return x value.
+     */
+    private Node deleteMin(final Node x) {
+        if (x.left == null) {
+            return x.right;
+        }
         x.left = deleteMin(x.left);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
-
     /**
      * Removes the largest key and associated value from the symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
+     * Time complexity is 1.
      */
     public void deleteMax() {
-        // if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
         root = deleteMax(root);
-        // assert check();
     }
-
     /**
-     * deletes max node.
+     * Removes the largest element with node value.
+     * Time complexity is logN.
      *
-     * @param      x     { parameter_description }
+     * @param      x     Node variable.
      *
-     * @return     { description_of_the_return_value }
+     * @return     return x value.
      */
-    private Node deleteMax(Node x) {
-        if (x.right == null) return x.left;
+    private Node deleteMax(final Node x) {
+        if (x.right == null) {
+            return x.left;
+        }
         x.right = deleteMax(x.right);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
-        /**
-     * Removes the specified key and its associated value from this symbol table     
-     * (if the key is in this symbol table).    
+    /**
+     * Removes the specified key and its associated value from this symbol table
+     * (if the key is in this symbol table).
+     * Time complexity is 1.
      *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
      */
-    public void delete(Book key) {
-        // if (key == null) throw new IllegalArgumentException("calls delete() with a null key");
+    public void delete(final Book key) {
         root = delete(root, key);
-        // assert check();
     }
 
     /**
-     * { function_description }
+     * delete the element that given.
+     * Time complexity is N.
      *
-     * @param      x     { parameter_description }
+     * @param      x     Node variable.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     return x value.
      */
-    private Node delete(Node x, Book key) {
-        if (x == null) return null;
-
-        int cmp = key.compareTo(x.key);
-        if      (cmp < 0) x.left  = delete(x.left,  key);
-        else if (cmp > 0) x.right = delete(x.right, key);
-        else { 
-            if (x.right == null) return x.left;
-            if (x.left  == null) return x.right;
-            Node t = x;
-            x = min(t.right);
-            x.right = deleteMin(t.right);
-            x.left = t.left;
-        } 
-        x.size = size(x.left) + size(x.right) + 1;
-        return x;
+    private Node delete(final Node x, final Book key) {
+        Node x1 = x;
+        if (x1 == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x1.key);
+        if (cmp < 0) {
+            x1.left  = delete(x1.left,  key);
+        } else if (cmp > 0) {
+            x1.right = delete(x1.right, key);
+        } else {
+            if (x1.right == null) {
+                return x1.left;
+            }
+            if (x1.left  == null) {
+                return x1.right;
+            }
+            Node t = x1;
+            x1 = min(t.right);
+            x1.right = deleteMin(t.right);
+            x1.left = t.left;
+        }
+        x1.size = size(x1.left) + size(x1.right) + 1;
+        return x1;
     }
-
 }
 /**
  * Client class.
