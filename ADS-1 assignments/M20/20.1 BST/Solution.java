@@ -1,26 +1,26 @@
 import java.util.Scanner;
 /**
- * Class for book.
+ * Class for book details.
  */
 class Book implements Comparable {
     /**
-     * name variable.
+     * variable declaration.
      */
     private String name;
     /**
-     * author variable.
+     * variable declaration.
      */
     private String author;
     /**
-     * price variable.
+     * variable declaration.
      */
     private float price;
     /**
      * Constructs the object.
      *
-     * @param      nm    { parameter_description }
-     * @param      au    { parameter_description }
-     * @param      cost  The cost
+     * @param      nm    The bookname
+     * @param      au  The bookauthor
+     * @param      cost   The bookprice
      */
     Book(final String nm,
                 final String au, final float cost) {
@@ -53,11 +53,11 @@ class Book implements Comparable {
         return this.price;
     }
     /**
-     * Compares the object.
+     * compare to method that returns integer.
      *
      * @param      object  The object
      *
-     * @return     1 or -1 after comparsion.
+     * @return  integer.
      */
     public int compareTo(final Object object) {
         Book that = (Book) object;
@@ -73,43 +73,43 @@ class Book implements Comparable {
     }
 }
 /**
- * Class for binary tree.
+ * Class for binary search tree.
  */
 class BinaryTree {
     /**
-     * root variable.
+     * variable declaration.
      */
     private Node root;
     /**
-     * Node class.
+     * Class for node.
      */
     private final class Node {
         /**
-         * key variable.
+         * variable declaration.
          */
         private Book key;
         /**
-         * val variable.
+         * variable declaration.
          */
         private int val;
         /**
-         * left variable.
+         * variable declaration.
          */
         private Node left;
         /**
-         * right variable.
+         * variable declaration.
          */
         private Node right;
         /**
-         * size variable.
+         * variable declaration.
          */
         private int size;
         /**
          * Constructs the object.
          *
-         * @param      key1  The key 1
-         * @param      val1  The value 1
-         * @param      s     { parameter_description }
+         * @param      key1   The key
+         * @param      val1   The value
+         * @param      s  The size 1
          */
         private Node(final Book key1, final int val1, final int s) {
             this.key = key1;
@@ -126,19 +126,19 @@ class BinaryTree {
         root = null;
     }
     /**
-     * size function.
+     * size method.
      *
-     * @return     size of the root.
+     * @return size.
      */
     public int size() {
         return size(root);
     }
     /**
-     * size function.
+     * size overloaded method.
      *
-     * @param      x     { parameter_description }
+     * @param      x Node
      *
-     * @return     size.
+     * @return size.
      */
     private int size(final Node x) {
         if (x == null) {
@@ -148,12 +148,11 @@ class BinaryTree {
         }
     }
     /**
-     * to get the key.
-     * time complexity is O(logN)
-     *
+     * get method.
+     * Time complexity is logN
      * @param      key   The key
      *
-     * @return     keyvalue.
+     * @return  integer.
      */
     public int get(final Book key) {
         Node x = root;
@@ -170,9 +169,8 @@ class BinaryTree {
         return -1;
     }
     /**
-     * put function.
-     * time complexity is O(1)
-     *
+     * Put.
+     * Time complexity is logN
      * @param      key   The key
      * @param      val   The value
      */
@@ -180,14 +178,13 @@ class BinaryTree {
         root = put(root, key, val);
     }
     /**
-     * put function.
-     * time complexity is O(logN)
-     *
-     * @param      x     { parameter_description }
+     * Put.
+     * Time complexity is logN
+     * @param      x   root node.
      * @param      key   The key
      * @param      val   The value
      *
-     * @return     value.
+     * @return root
      */
     private Node put(final Node x, final Book key, final int val) {
         if (x == null) {
@@ -204,208 +201,6 @@ class BinaryTree {
         return x;
     }
     /**
-     * min function.
-     * time complexity is O(1)
-     *
-     * @return     min roots key.
-     */
-    public Book min() {
-        return min(root).key;
-    }
-    /**
-     * min function.
-     * time complexity is O(logN)
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     min value.
-     */
-    private Node min(final Node x) {
-        if (x.left == null) {
-            return x;
-        } else {
-            return min(x.left);
-        }
-    }
-    /**
-     * max function.
-     * time complexity is O(1)
-     *
-     * @return     max value.
-     */
-    public Book max() {
-        return max(root).key;
-    }
-    /**
-     * max value.
-     * time complexity is O(logN)
-     *
-     * @param      x     { parameter_description }
-     *
-     * @return     max value.
-     */
-    private Node max(final Node x) {
-        if (x.right == null) {
-            return x;
-        } else {
-            return max(x.right);
-        }
-    }
-    /**
-     * to get floor value.
-     * time complexity is O(1)
-     *
-     * @param      key   The key
-     *
-     * @return     floor value.
-     */
-    public Book floor(final Book key) {
-        Node x = floor(root, key);
-        if (x == null) {
-            return null;
-        } else {
-            return x.key;
-        }
-    }
-    /**
-     * floor function.
-     * time complexity is O(logN)
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node floor(final Node x, final Book key) {
-        if (x == null) {
-            return null;
-        }
-        int cmp = key.compareTo(x.key);
-        if (cmp == 0) {
-            return x;
-        }
-        if (cmp <  0) {
-            return floor(x.left, key);
-        }
-        Node t = floor(x.right, key);
-        if (t != null) {
-            return t;
-        } else {
-            return x;
-        }
-    }
-    /**
-     * ceiling function.
-     * time complexity is O(1)
-     * 
-     *
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Book ceiling(final Book key) {
-        Node x = ceiling(root, key);
-        if (x == null) {
-            return null;
-        } else {
-            return x.key;
-        }
-    }
-    /**
-     * ceiling function.
-     * time complexity is O(logN)
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node ceiling(final Node x, final Book key) {
-        if (x == null) {
-            return null;
-        }
-        int cmp = key.compareTo(x.key);
-        if (cmp == 0) {
-            return x;
-        }
-        if (cmp < 0) {
-            Node t = ceiling(x.left, key);
-            if (t != null) {
-                return t;
-            } else {
-                return x;
-            }
-        }
-        return ceiling(x.right, key);
-    }
-    /**
-     * select function.
-     * Time complexity of this method is O(1).
-     *
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Book select(final int k) {
-        Node x = select(root, k);
-        return x.key;
-    }
-    /**
-     * select function.
-     * Time complexity of this method is O(log(N)).
-     *
-     * @param      x     { parameter_description }
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node select(final Node x, final int k) {
-        if (x == null) {
-            return null;
-        }
-        int t = size(x.left);
-        if (t > k) {
-            return select(x.left,  k);
-        } else if (t < k) {
-            return select(x.right, k - t - 1);
-        } else {
-            return x;
-        }
-    }
-    /**
-     * rank function.
-     * Time complexity of this method is O(1).
-     *
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int rank(final Book key) {
-        return rank(key, root);
-    }
-    /**
-     * rank function.
-     * Time complexity of this method is O(log(N)).
-     *
-     * @param      key   The key
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private int rank(final Book key, final Node x) {
-        if (x == null) {
-            return 0;
-        }
-        int cmp = key.compareTo(x.key);
-        if (cmp < 0) {
-            return rank(key, x.left);
-        } else if (cmp > 0) {
-            return 1 + size(x.left) + rank(key, x.right);
-        } else {
-            return size(x.left);
-        }
-    }
-/**
      * deleteing minimum element.
      * Time complexity is 1.
      */
@@ -496,9 +291,199 @@ class BinaryTree {
         x1.size = size(x1.left) + size(x1.right) + 1;
         return x1;
     }
+    /**
+     * minimum.
+     * Time complexity is 1.
+     * @return minimum.
+     */
+    public Book min() {
+        return min(root).key;
+    }
+    /**
+     * minimum.
+     * Time complexity is logN
+     * @param      x Node
+     *
+     * @return minimum.
+     */
+    private Node min(final Node x) {
+        if (x.left == null) {
+            return x;
+        } else {
+            return min(x.left);
+        }
+    }
+    /**
+     * maximum.
+     * Time complexity is 1.
+     * @return maximum.
+     */
+    public Book max() {
+        return max(root).key;
+    }
+    /**
+     * maximum.
+     * Time complexity is logN
+     * @param      x Node
+     *
+     * @return maximum.
+     */
+    private Node max(final Node x) {
+        if (x.right == null) {
+            return x;
+        } else {
+            return max(x.right);
+        }
+    }
+    /**
+     * floor.
+     * Time complexity is 1.
+     * @param      key   The key
+     *
+     * @return  key
+     */
+    public Book floor(final Book key) {
+        Node x = floor(root, key);
+        if (x == null) {
+            return null;
+        } else {
+            return x.key;
+        }
+    }
+    /**
+     *
+     * floor.
+     * Time complexity is logN
+     * @param      x Node
+     * @param      key   The key
+     *
+     * @return floor.
+     */
+    private Node floor(final Node x, final Book key) {
+        if (x == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) {
+            return x;
+        }
+        if (cmp <  0) {
+            return floor(x.left, key);
+        }
+        Node t = floor(x.right, key);
+        if (t != null) {
+            return t;
+        } else {
+            return x;
+        }
+    }
+    /**
+     * ceiling.
+     * Time complexity is 1.
+     * @param      key   The key
+     *
+     * @return key.
+     */
+    public Book ceiling(final Book key) {
+        Node x = ceiling(root, key);
+        if (x == null) {
+            return null;
+        } else {
+            return x.key;
+        }
+    }
+    /**
+     * ceiling..
+     * Time complexity is logN
+     * @param      x Node
+     * @param      key   The key
+     *
+     * @return     return ceiling value.
+     */
+    private Node ceiling(final Node x, final Book key) {
+        if (x == null) {
+            return null;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) {
+            return x;
+        }
+        if (cmp < 0) {
+            Node t = ceiling(x.left, key);
+            if (t != null) {
+                return t;
+            } else {
+                return x;
+            }
+        }
+        return ceiling(x.right, key);
+    }
+    /**
+     * Select.
+     * Time complexity is 1.
+     * @param      k     Integer
+     *
+     * @return     Book Object
+     */
+    public Book select(final int k) {
+        Node x = select(root, k);
+        return x.key;
+    }
+    /**
+     * Select.
+     * Time complexity is logN.
+     * @param      x     {Node}
+     * @param      k     {Integer}
+     *
+     * @return     {Node}
+     */
+    private Node select(final Node x, final int k) {
+        if (x == null) {
+            return null;
+        }
+        int t = size(x.left);
+        if (t > k) {
+            return select(x.left,  k);
+        } else if (t < k) {
+            return select(x.right, k - t - 1);
+        } else {
+            return x;
+        }
+    }
+    /**
+     * rank.
+     * Time complexity is 1.
+     * @param      key   The key
+     *
+     * @return     {Integer}
+     */
+    public int rank(final Book key) {
+        return rank(key, root);
+    }
+    /**
+     * rank.
+     * Time complexity is logN
+     * @param      key   The key
+     * @param      x     Node variable.
+     *
+     * @return     Integer
+     */
+    private int rank(final Book key, final Node x) {
+        if (x == null) {
+            return 0;
+        }
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) {
+            return rank(key, x.left);
+        } else if (cmp > 0) {
+            return 1 + size(x.left) + rank(key, x.right);
+        } else {
+            return size(x.left);
+        }
+    }
 }
 /**
- * Client class.
+ * client program.
  */
 public final class Solution {
     /**
@@ -508,7 +493,7 @@ public final class Solution {
         //unused constructor.
     }
     /**
-     * main function.
+     * main method.
      *
      * @param      args  The arguments
      */
@@ -517,50 +502,55 @@ public final class Solution {
         BinaryTree bst = new BinaryTree();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
+            final int three = 3;
+            final int four = 4;
             switch (tokens[0]) {
             case "put":
-                Book book = new Book(tokens[1],
-                    tokens[2], Float.parseFloat(tokens[2 + 1]));
-                bst.put(book, Integer.parseInt(tokens[2 + 2]));
-                break;
+                Book books = new Book(tokens[1],
+                    tokens[2], Float.parseFloat(tokens[three]));
+                bst.put(books, Integer.parseInt(tokens[four]));
+            break;
             case "get":
-                book = new Book(tokens[1], tokens[2],
-                                        Float.parseFloat(tokens[2 + 1]));
-                if (bst.get(book) == -1) {
+                books = new Book(tokens[1], tokens[2],
+                                        Float.parseFloat(tokens[three]));
+                if (bst.get(books) == -1) {
                     System.out.println("null");
                 } else {
-                    System.out.println(bst.get(book));
+                    System.out.println(bst.get(books));
                 }
-                break;
+            break;
             case "max":
                 System.out.println(bst.max());
-                break;
+            break;
             case "min":
                 System.out.println(bst.min());
-                break;
+            break;
             case "select":
                 System.out.println(bst.select(Integer.parseInt(tokens[1])));
-                break;
+            break;
             case "floor":
-                book = new Book(tokens[1],
-                    tokens[2], Float.parseFloat(tokens[2 + 1]));
-                System.out.println(bst.floor(book));
-                break;
+                books = new Book(tokens[1],
+                    tokens[2], Float.parseFloat(tokens[three]));
+                System.out.println(bst.floor(books));
+            break;
             case "ceiling":
-                book = new Book(tokens[1],
-                    tokens[2], Float.parseFloat(tokens[2 + 1]));
-                System.out.println(bst.ceiling(book));
-            case "delete":
-                book = new Book(tokens[1],
-                    tokens[2], Float.parseFloat(tokens[2 + 1]));
-                bst.delete(book);
-            case "deleteMax":
-                bst.deleteMax();
+                books = new Book(tokens[1],
+                    tokens[2], Float.parseFloat(tokens[three]));
+                System.out.println(bst.ceiling(books));
+            break;
             case "deleteMin":
                 bst.deleteMin();
                 break;
-            default:
+            case "deleteMax":
+                bst.deleteMax();
                 break;
+            case "delete":
+                books = new Book(tokens[1], tokens[2],
+                                        Float.parseFloat(tokens[three]));
+                bst.delete(books);
+                break;
+            default:
+            break;
             }
         }
     }
