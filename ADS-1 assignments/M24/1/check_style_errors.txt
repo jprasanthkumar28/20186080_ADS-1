@@ -1,8 +1,9 @@
 Starting audit...
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:183: Line is longer than 80 characters (found 120). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:183:86: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:187: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:187:78: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:185: Line is longer than 80 characters (found 120). [LineLength]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:185:86: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:189: Line is longer than 80 characters (found 112). [LineLength]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\1\Solution.java:189:78: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 6 errors.

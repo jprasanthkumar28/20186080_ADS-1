@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 /**
  * Class for student.
  */
@@ -178,6 +179,7 @@ public final class Solution {
         BinaryTree bt = new BinaryTree();
         while (scan.hasNextLine()) {
             String[] tokens = scan.nextLine().split(",");
+            System.out.println(Arrays.toString(tokens));
             switch (tokens[0]) {
                 case "put":
                 Student student = new Student(tokens[1], Integer.parseInt(tokens[2]),Double.parseDouble(tokens[2 + 2]));
