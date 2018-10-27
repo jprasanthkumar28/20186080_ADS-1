@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:22:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:25: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:36: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:47: Missing a Javadoc comment. [JavadocType]
+[ERROR] M:\20186080_ADS-1\ADS-1 assignments\M24\2\Solution.java:60:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 7 errors.
