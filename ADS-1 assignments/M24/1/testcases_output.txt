@@ -13,7 +13,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "A
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:187)
+	at Solution.main(Solution.java:413)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -35,7 +35,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "A
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:187)
+	at Solution.main(Solution.java:413)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -61,7 +61,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "A
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:187)
+	at Solution.main(Solution.java:413)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -570,5 +570,5 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "H
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:187)
+	at Solution.main(Solution.java:413)
 ----------------------------------------
