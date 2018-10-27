@@ -109,6 +109,7 @@ class BinaryTree {
      * @param      value  The value
      */
     public void put(final Student key, final String value) {
+        // System.out.println("asdfgh");
         root = put(root, key, value);
     }
     /**
@@ -121,6 +122,7 @@ class BinaryTree {
      * @return     the value.
      */
     public Node put(final Node a, final Student key, final String value) {
+        // System.out.println("asdfgh");
         if (a == null) {
             return new Node(key, value);
         }
@@ -176,22 +178,28 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
+        int n = Integer.parseInt(scan.nextLine());
         BinaryTree bt = new BinaryTree();
-        while (scan.hasNextLine()) {
-            String[] tokens = scan.nextLine().split(",");
-            System.out.println(Arrays.toString(tokens));
+        Student[] students = new Student[n];
+        String[] tokens = null;
+        for (int k = 0; k < n; k++) {
+            tokens = scan.nextLine().split(",");
+            students[k] = new Student(tokens[0], Integer.parseInt(tokens[1]),Double.parseDouble(tokens[2]));
+        }
+
+            // System.out.println(Arrays.toString(tokens));
+            // System.out.println(tokens[0]);
             switch (tokens[0]) {
-                case "put":
-                Student student = new Student(tokens[1], Integer.parseInt(tokens[2]),Double.parseDouble(tokens[2 + 2]));
-                bt.put(student, tokens[2 + 2]);
-                break;
+                // case "put":
+                // Student student = new Student(tokens[1], Integer.parseInt(tokens[2]),Double.parseDouble(tokens[2 + 2]));
+                // bt.put(student, tokens[2 + 1]);
+                // break;
                 case "get":
-                student = new Student(tokens[1], Integer.parseInt(tokens[2]),Double.parseDouble(tokens[2 + 1]));
+                Student student = new Student(tokens[1], Integer.parseInt(tokens[2]),Double.parseDouble(tokens[2 + 1]));
                 System.out.println(bt.get(student));
                 break;
                 default:
                 break;
             }
-        }
     }
 }
